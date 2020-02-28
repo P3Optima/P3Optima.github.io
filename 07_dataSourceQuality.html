@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Product owner: Ready Mix Concrete Inc." />
+<meta name="author" content="EPD Commissioner: Ready Mix Concrete Inc." />
+<meta name="author" content="LCA Practitioner: XXXX" />
+<meta name="author" content="Program Operator: XXXX" />
+<meta name="author" content="Third Party Verifier: First Last" />
+
+<meta name="date" content="2020-02-26" />
+
+<title>07_dataSourceQuality.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EPD by Company123 at their XXXX facility in XXXX</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://EPDprogramOperator.com/">
+    <span class="fa fa-home"></span>
+     
+    Program Operator
+  </a>
+</li>
+<li>
+  <a href="EPDreport.html">
+    <span class="fa fa-users"></span>
+     
+    EPD Report
+  </a>
+</li>
+<li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Cover
+  </a>
+</li>
+<li>
+  <a href="01_adminInfo.html">
+    <span class="fa fa-user-shield"></span>
+     
+    Admin info
+  </a>
+</li>
+<li>
+  <a href="02_companyInfo.html">
+    <span class="fa fa-address-card"></span>
+     
+    Company info
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-rainbow"></span>
+     
+    Goal and Scope
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="03_studyGoal.html">Study goal</a>
+    </li>
+    <li>
+      <a href="04_productScope.html">Product scope</a>
+    </li>
+    <li>
+      <a href="05_mixSummary.html">Concrete mix summary</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-database"></span>
+     
+    Life cycle inventory
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="06_systemBoundaries.html">System boundaries</a>
+    </li>
+    <li>
+      <a href="07_dataSourceQuality.html">Data sources &amp; quality</a>
+    </li>
+    <li>
+      <a href="08_detailedLCItables.html">Detailed LCI tables</a>
+    </li>
+    <li>
+      <a href="09_transportTables.html">Transport tables</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="10_lciaIndicators.html">
+    <span class="fa fa-ruler"></span>
+     
+    LCIA indicators
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-chart-bar"></span>
+     
+    LCIA results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="11_totImpactSummary.html">Total impact summary</a>
+    </li>
+    <li>
+      <a href="12_A1toA3breakdown.html">A1 to A3 breakdown</a>
+    </li>
+    <li>
+      <a href="13_totImpactStats.html">Total impact statistics</a>
+    </li>
+    <li>
+      <a href="14_detailedBreakdownPlots.html">Detailed breakdown plots</a>
+    </li>
+    <li>
+      <a href="29_detailedLCIAbreakdownTables.html">Detailed breakdown tables</a>
+    </li>
+    <li>
+      <a href="30_additionalEnvInfo.html">Other Env. Info</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="31_references.html">
+    <span class="fa fa-books"></span>
+     
+    References
+  </a>
+</li>
+<li>
+  <a href="32_verificationReport.html">
+    <span class="fa fa-check-square"></span>
+     
+    Verification
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="content" data-toggle="wy-nav-shift">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("text-table-of-contents");
+});
+</script>
+
+<!-- code folding -->
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
+
+
+
+
+<div id="table-of-contents">
+    <h2><a href="#content"></a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#section"></a></li>
+      <li><a href="#section-1"></a></li>
+      <li><a href="#section-2"></a></li>
+      <li><a href="#section-3"></a></li>
+      <li><a href="#section-4"></a></li>
+      <li><a href="#section-5"></a></li>
+      <li><a href="#section-6"></a></li>
+      <li><a href="#section-7"></a></li>
+      <li><a href="#section-8"></a></li>
+      <li><a href="#section-9"></a></li>
+      <li><a href="#section-10"></a></li>
+      <li><a href="#section-11"></a></li>
+      <li><a href="#data-sources-and-data-quality-assessment">Data Sources and Data Quality Assessment</a><ul>
+      <li><a href="#data-quality-assessment">Data Quality Assessment</a></li>
+      </ul></li>
+      </ul>
+    </div>
+</div>
+
+<div id="main">
+<div id="section" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-1" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-2" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-3" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-4" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-5" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-6" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-7" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-8" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-9" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-10" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-11" class="section level2 unnumbered">
+<h2></h2>
+<p><br> <br> <br> <br> <br> <br> <br></p>
+</div>
+<div id="data-sources-and-data-quality-assessment" class="section level2 unnumbered">
+<h2>Data Sources and Data Quality Assessment</h2>
+<p>The following table summarizes the facility’s (i.e. A3) electricity consumption and generation (if applicable), process/space heating requirements, fuel inputs for on-site machinery, and waste generation.</p>
+Table 3817: <strong>Inputs required by facility from to (364 days) to produce cubic meters</strong>
+<table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Activity
+</th>
+<th style="text-align:left;">
+Value
+</th>
+<th style="text-align:left;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr grouplength="1">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Electricity consumption and generation (if applicable)</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Gross grid electricity:
+</td>
+<td style="text-align:left;width: 6em; ">
+20000
+</td>
+<td style="text-align:left;width: 6em; ">
+kWh
+</td>
+</tr>
+<tr grouplength="1">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Process/space heating requirements</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Process heat
+</td>
+<td style="text-align:left;width: 6em; ">
+20
+</td>
+<td style="text-align:left;width: 6em; ">
+GJ
+</td>
+</tr>
+<tr grouplength="2">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Fuel requirements for machinery</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Propane, heating mix
+</td>
+<td style="text-align:left;width: 6em; ">
+400
+</td>
+<td style="text-align:left;width: 6em; ">
+m3
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Loader, moving aggregaes, Diesel
+</td>
+<td style="text-align:left;width: 6em; ">
+2000
+</td>
+<td style="text-align:left;width: 6em; ">
+L
+</td>
+</tr>
+<tr grouplength="4">
+<td colspan="3" style="border-bottom: 1px solid;">
+<strong>Waste generation</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Concrete wash water
+</td>
+<td style="text-align:left;width: 6em; ">
+222
+</td>
+<td style="text-align:left;width: 6em; ">
+m3
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Hazardous waste
+</td>
+<td style="text-align:left;width: 6em; ">
+3
+</td>
+<td style="text-align:left;width: 6em; ">
+kg
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Non-hazardous concrete waste
+</td>
+<td style="text-align:left;width: 6em; ">
+10000
+</td>
+<td style="text-align:left;width: 6em; ">
+kg
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+High-level radioactive waste
+</td>
+<td style="text-align:left;width: 6em; ">
+0
+</td>
+<td style="text-align:left;width: 6em; ">
+kg
+</td>
+</tr>
+</tbody>
+</table>
+Table 3818: <strong>Recovered on-site energy resources either utilized on-site or off-site</strong>
+<table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Technology and fuel type
+</th>
+<th style="text-align:right;">
+Value
+</th>
+<th style="text-align:left;">
+Units
+</th>
+<th style="text-align:left;">
+Reovered on-site or off-site
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 25em; ">
+Waste heat from …
+</td>
+<td style="text-align:right;width: 4em; ">
+300
+</td>
+<td style="text-align:left;width: 4em; width: 6em; ">
+GJ
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
+Table 3819: <strong>Reused or recycled components/materials at the A3 facility site</strong>
+<table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Component/material for re-use/recycling
+</th>
+<th style="text-align:right;">
+Value
+</th>
+<th style="text-align:left;">
+Units
+</th>
+<th style="text-align:left;">
+Re-used/recycled on-site or off-site
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 25em; ">
+Cardboard packaging
+</td>
+<td style="text-align:right;width: 4em; ">
+300
+</td>
+<td style="text-align:left;width: 4em; width: 6em; ">
+NA
+</td>
+<td style="text-align:left;">
+off-site
+</td>
+</tr>
+</tbody>
+</table>
+<p>The following statements explain how the above facility requirements/generation were derived:</p>
+<ul>
+<li><strong>Electricity</strong>: Electricity generation and consumption values were based on monthly utility bills.</li>
+<li><strong>Process/space heating</strong>: Electricity heat requirements were based on monthly utility bills.</li>
+<li><strong>Fuel required for machinery:</strong>: Energy requirements for machinery were based on fuel purchase receipts.</li>
+<li><strong>Waste generation:</strong>: Please provide an explanation of how the above waste generation values were determined:</li>
+<li><strong>Recovered energy:</strong>: Recovered energy (both on and off-site) was measured based on volume and energy estimates using various metering devices.</li>
+<li><strong>Recycled/reused material/components:</strong>: The above estimates were based on case-by-case basis depending on the material/component type.</li>
+<li><strong>Module A1 material losses:</strong>: Facility-boundary material flow analysis techniques were utilized.</li>
+</ul>
+<p>The following tables (i.e. modules A1 to A3) depict a list of assumed life cycle inventory utilized in the LCA modelling to generate the impact results. An assessment of the quality of each LCI activity utilized is also provided.</p>
+Table 3820: <strong>LCI inputs assumed for module A1 (i.e. raw material supply)</strong>
+<table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Input
+</th>
+<th style="text-align:left;">
+LCI.activity
+</th>
+<th style="text-align:left;">
+Data.source
+</th>
+<th style="text-align:left;">
+Geography
+</th>
+<th style="text-align:left;">
+Year
+</th>
+<th style="text-align:left;">
+Data.Quality.Assessment
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Gravel
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+Production of aggregates, TYPE L RIP RAP D/50=9/US-CO/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+2017
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+Ontario
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: -
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: -
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: -
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Tap water
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+market for tap water/RoW/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+Ontario
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Very good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+xyz Admix
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+Production of concrete admixture, set accelerator/RER/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+2015
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+Alberta
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+2015
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: 3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: 1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: 2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Sand
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+silica sand production/DE/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+Ontario
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+General use cement
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+cement production, Portland/US/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+Xinjiang
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+</tbody>
+</table>
+Table 3821: <strong>LCI inputs assumed for module A2 (i.e. transport of A1 inputs)</strong>
+<table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Input
+</th>
+<th style="text-align:left;">
+LCI.activity
+</th>
+<th style="text-align:left;">
+Data.source
+</th>
+<th style="text-align:left;">
+Geography
+</th>
+<th style="text-align:left;">
+Year
+</th>
+<th style="text-align:left;">
+Data.Quality.Assessment
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Gravel- freight transport via Truck
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+transport, freight, lorry 7.5-16 metric ton, EURO6/RoW/ton kilometer
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good, transport activities are GLO/RoW averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair, transport activities GLO/Row averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+xyz Admix- freight transport via Truck
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+transport, freight, lorry 16-32 metric ton, EURO3/RoW/ton kilometer
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good, transport activities are GLO/RoW averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair, transport activities GLO/Row averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+xyz Admix- freight transport via Rail
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+market group for transport, freight train/GLO/ton kilometer
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+GLO
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good, transport activities are GLO/RoW averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair, transport activities GLO/Row averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+General use cement- freight transport via Ship
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+transport, freight, sea, transoceanic ship/GLO/ton kilometer
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+GLO
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good, transport activities are GLO/RoW averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair, transport activities GLO/Row averages
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+</tbody>
+</table>
+Table 3822: <strong>LCI inputs assumed for module A3 (i.e. manufacutring of mixes)</strong>
+<table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Input
+</th>
+<th style="text-align:left;">
+LCI.activity
+</th>
+<th style="text-align:left;">
+Data.source
+</th>
+<th style="text-align:left;">
+Geography
+</th>
+<th style="text-align:left;">
+Year
+</th>
+<th style="text-align:left;">
+Data.Quality.Assessment
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Concrete wash water
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+market for wastewater from concrete production/RoW/cubic meter
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Propane, heating mix
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+propane, burned in building machine/GLO/megajoule
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+GLO
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Truck and fuel type
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+transport, freight, lorry 16-32 metric ton, EURO6/RoW/ton kilometer
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Grid electricity
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+market for electricity, medium voltage/CA-QC/kilowatt hour
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+CA-QC
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Very good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Very good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Hazardous waste
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+treatment of hazardous waste, underground deposit/RoW/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Loader, moving aggregaes, Diesel
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+excavation, skid-steer loader/RoW/cubic meter
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Non-hazardous concrete waste
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+treatment of waste concrete, not reinforced, collection for final disposal/RoW/kilogram
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Rooftop PV
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+electricity production, photovoltaic, 3kWp slanted-roof installation, multi-Si, panel, mounted/CA-ON/kilowatt hour
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+CA-ON
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Very good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; vertical-align: top !important;" rowspan="5">
+Process heat
+</td>
+<td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
+heat production, natural gas, at industrial furnace &gt;100kW/RoW/megajoule
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+ecoinvent v3.4
+</td>
+<td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
+RoW
+</td>
+<td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
+v3.4 in 2017
+</td>
+<td style="text-align:left;width: 19em; ">
+. Technology: Good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Time: Good, ecoinvent routinely updated - v3.4 less than 3 years old
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Geography: Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Reliability: very good, 3rd party verfied dataset
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 19em; ">
+. Completeness: very good, ecoinvent considers most inputs/outputs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+</td>
+<td style="text-align:left;width: 10em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 4em; ">
+</td>
+<td style="text-align:left;width: 3em; ">
+</td>
+<td style="text-align:left;width: 19em; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div id="data-quality-assessment" class="section level3 unnumbered">
+<h3>Data Quality Assessment</h3>
+<p>Data quality/variability requirements, as specified in the PCR, are applied. This section describes the achieved data quality relative to the ISO 14044:2006 requirements. Data quality is judged based on its precision (measured, calculated or estimated), completeness (e.g., unreported emissions), consistency (degree of uniformity of the methodology applied within a study serving as a data source) and representativeness (geographical, temporal, and technological).</p>
+<p><strong>Precision</strong>: Through measurement and calculation, the manufacturers collected and provided primary data on their annual production. For accuracy, the LCA practitioner and 3rd Party Verifier validated the plant gate-to-gate data.</p>
+<p><strong>Completeness</strong>: All relevant specific processes, including inputs (raw materials, energy and ancillary materials) and outputs (emissions and production volume) were considered and modeled to represent the specified and declared products. The relevant background materials and processes were taken from ecoinvent v3.4 LCI databases where relatively recent Canadian-specific electricity inputs were utilized.</p>
+<p><strong>Consistency</strong>: To ensure consistency, the LCI modeling of the production weighted input and output LCI data for the declared products used the same modeling structure across the respective product systems, which consisted of raw material inputs and ancillary material, energy flows, water resource inputs, product and co-products outputs, returned and recovered concrete materials, emissions to air, water and soil, and waste recycling and treatment. The same background LCI datasets the ecoinvent v3.4 database were used across all product systems. Crosschecks concerning the plausibility of mass and energy flows were continuously conducted. The LCA team conducted mass and energy balances at the plant and selected process level to maintain a high level of consistency.</p>
+<p><strong>Reproducibility</strong>: Internal reproducibility is possible since the data and the models are stored and available in a machine readable project file for all foreground and background processes, and in P3Optima’s proprietary concrete LCA calculator* for all production facility and mix-specific calculations. A considerable level of transparency is provided throughout the LCA report as the specifications and material quantity make-up for the declared products are presented and key primary and secondary LCI data sources are summarized. The provision of more detailed data to allow full external reproducibility was not possible due to reasons of confidentiality.</p>
+<p>*P3Optima has developed a proprietary tool that allows the calculation of PCR-compliant LCA results for ready-mixed concrete product mix designs. The tool auto-calculates results by scaling base-unit technosphere inputs (i.e. 1 kg portland cement, 1 kWh electricity, etc.) to replicate the reference flow conversions that take place in any typical LCA software like openLCA or SimaPro. The tool was tested against several LCAs performed in openLCA and the tool generated identical results to those realized in openLCA across every impact category and inventory metric (where comparisons could be readily made).</p>
+<p><strong>Representativeness</strong>: The representativeness of the data is summarized as follows.</p>
+<ul>
+<li>Time related coverage of the manufacturing processes’ primary collected data from to .</li>
+<li>Upstream (background) LCI data was either the PCR specified default or more appropriate LCI datasets as found in the Canadian-adjusted ecoinvent v3.4 database, 2017.</li>
+<li>Geographical coverage for the cement and concrete plant operations is Canada; other upstream and background processes are based on US, North American, or global average data and adjusted to regional electricity mixes when relevant.</li>
+<li>Technological coverage is typical or average – specific to the participating facilities for all primary data.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Ready Mix Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Ready Mix Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> LCA Practitioner: XXXX</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operator: XXXX</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Third Party Verifier: First Last</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 26 February 2020</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+ 	    $('#content img')
+ 	  .addClass("image-lb");
+  $('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      closeBtnInside: false,
+	      delegate: 'img',
+	      gallery: {enabled: true },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+ 	});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

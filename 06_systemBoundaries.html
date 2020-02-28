@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Product owner: Ready Mix Concrete Inc." />
+<meta name="author" content="EPD Commissioner: Ready Mix Concrete Inc." />
+<meta name="author" content="LCA Practitioner: XXXX" />
+<meta name="author" content="Program Operator: XXXX" />
+<meta name="author" content="Third Party Verifier: First Last" />
+
+<meta name="date" content="2020-02-26" />
+
+<title>06_systemBoundaries.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EPD by Company123 at their XXXX facility in XXXX</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://EPDprogramOperator.com/">
+    <span class="fa fa-home"></span>
+     
+    Program Operator
+  </a>
+</li>
+<li>
+  <a href="EPDreport.html">
+    <span class="fa fa-users"></span>
+     
+    EPD Report
+  </a>
+</li>
+<li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Cover
+  </a>
+</li>
+<li>
+  <a href="01_adminInfo.html">
+    <span class="fa fa-user-shield"></span>
+     
+    Admin info
+  </a>
+</li>
+<li>
+  <a href="02_companyInfo.html">
+    <span class="fa fa-address-card"></span>
+     
+    Company info
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-rainbow"></span>
+     
+    Goal and Scope
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="03_studyGoal.html">Study goal</a>
+    </li>
+    <li>
+      <a href="04_productScope.html">Product scope</a>
+    </li>
+    <li>
+      <a href="05_mixSummary.html">Concrete mix summary</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-database"></span>
+     
+    Life cycle inventory
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="06_systemBoundaries.html">System boundaries</a>
+    </li>
+    <li>
+      <a href="07_dataSourceQuality.html">Data sources &amp; quality</a>
+    </li>
+    <li>
+      <a href="08_detailedLCItables.html">Detailed LCI tables</a>
+    </li>
+    <li>
+      <a href="09_transportTables.html">Transport tables</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="10_lciaIndicators.html">
+    <span class="fa fa-ruler"></span>
+     
+    LCIA indicators
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-chart-bar"></span>
+     
+    LCIA results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="11_totImpactSummary.html">Total impact summary</a>
+    </li>
+    <li>
+      <a href="12_A1toA3breakdown.html">A1 to A3 breakdown</a>
+    </li>
+    <li>
+      <a href="13_totImpactStats.html">Total impact statistics</a>
+    </li>
+    <li>
+      <a href="14_detailedBreakdownPlots.html">Detailed breakdown plots</a>
+    </li>
+    <li>
+      <a href="29_detailedLCIAbreakdownTables.html">Detailed breakdown tables</a>
+    </li>
+    <li>
+      <a href="30_additionalEnvInfo.html">Other Env. Info</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="31_references.html">
+    <span class="fa fa-books"></span>
+     
+    References
+  </a>
+</li>
+<li>
+  <a href="32_verificationReport.html">
+    <span class="fa fa-check-square"></span>
+     
+    Verification
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="content" data-toggle="wy-nav-shift">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("text-table-of-contents");
+});
+</script>
+
+<!-- code folding -->
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
+
+
+
+
+<div id="table-of-contents">
+    <h2><a href="#content"></a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#section"></a></li>
+      <li><a href="#section-1"></a></li>
+      <li><a href="#section-2"></a></li>
+      <li><a href="#section-3"></a></li>
+      <li><a href="#section-4"></a></li>
+      <li><a href="#section-5"></a></li>
+      <li><a href="#section-6"></a></li>
+      <li><a href="#section-7"></a></li>
+      <li><a href="#section-8"></a></li>
+      <li><a href="#section-9"></a></li>
+      <li><a href="#section-10"></a></li>
+      <li><a href="#section-11"></a></li>
+      <li><a href="#section-12"></a></li>
+      <li><a href="#system-boundaries">System boundaries</a><ul>
+      <li><a href="#cut-off-criteria">Cut-off criteria</a></li>
+      </ul></li>
+      </ul>
+    </div>
+</div>
+
+<div id="main">
+<div id="section" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-1" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-2" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-3" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-4" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-5" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-6" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-7" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-8" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-9" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-10" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-11" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-12" class="section level2 unnumbered">
+<h2></h2>
+<p><br> <br> <br> <br> <br> <br> <br></p>
+</div>
+<div id="system-boundaries" class="section level2 unnumbered">
+<h2>System boundaries</h2>
+<p>As depicted in the figure below, this study considers a cradle-to-gate system boundary:</p>
+<p><img src="figures/systemFigs/A1-A3%20Modules.png" /> Figure 779: <strong>General life cycle phases for consideration in a construction works system. The red boundary line indicates the system scope considered in this LCA/EPD</strong></p>
+<p>This is a “cradle-to-gate” life cycle analysis reported in accordance with EPD Product Category Rule (PCR) v2.3 2012:01 and the sub-PCR-F, Resilient, Textile and Laminate Floor Coverings 2012:01. The following three life cycle stages are included in the study: * A1: Raw material supply (upstream processes) - Extraction, handling, and processing of the materials used in manufacturing the declared products in this LCA. * A2: Transportation - Transportation of A1 materials from the supplier to the “gate” of the manufacturing facility (i.e. A3). * A3: Manufacturing (core processes)- The energy and other utility inputs used to store, move, and manufacturer the declared products and to operate the facility.</p>
+<p>As according to the PCR, the following figure illustrates the general activities and input requirements for producing concrete products and is not necessarily exhaustive.</p>
+<p><img src="figures/systemFigs/ProductSystemBoudary.png" /> Figure 780: <strong>General system inputs considered in the product system and categorized by modules A1 to A3</strong></p>
+<p>In addition, as according to the relevant PCR, the following requirements are excluded from this study:</p>
+<ul>
+<li>Production, manufacture and construction of A3 building/capital goods and infrastructure;</li>
+<li>Production and manufacture of steel production equipment, steel delivery vehicles, earthmoving equipment, and laboratory equipment;</li>
+<li>Personnel-related activities (travel, furniture, office supplies);</li>
+<li>Energy use related to company management and sales activities.</li>
+</ul>
+<p>For this LCA the manufacturing plant, owned and operated by Ready Mix Concrete Inc., is located at their XXXX facility in Region, Country. All operating data is formulated using the actual data from Ready Mix Concrete Inc.’s plant at the above location, including water, energy consumption and waste generation. All inputs for this system boundary are calculated for the plant.</p>
+<p>This life cycle inventory was organized in a spreadsheet and was then input into an RStudio environment where pre-calculated LCIA results for relevant products/activies stemming from the ecoinvent 3.4 database and a local EPD database in combination with primary data from Ready Mix Concrete Inc. were utilzied. Explanations of the contribution of each data source to this study are outlined in the section Data Sources and Quality. Further LCI details for each declared product are provided in the sections ‘Detailed LCI tables’ and ‘Transport tables’ of the detailed LCA report. A parameter uncertainty analysis was also performed where key statistical results (e.g. min/mean/max etc.) are provided.</p>
+<div id="cut-off-criteria" class="section level3 unnumbered">
+<h3>Cut-off criteria</h3>
+<p>ISO 14044:2006 and the focus PCR requires the LCA model to contain a minimum of 95% of the total inflows (mass and energy) to the upstream and core modules be included in this study. The cut-off criteria were applied to all other processes unless noted above as follows: * A 1% cut-off is considered for all renewable and non-renewable primary energy consumption and the total mass of inputs within a unit process where the total of the neglected inputs does not exceed 5%.</p>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Ready Mix Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Ready Mix Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> LCA Practitioner: XXXX</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operator: XXXX</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Third Party Verifier: First Last</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 26 February 2020</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+ 	    $('#content img')
+ 	  .addClass("image-lb");
+  $('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      closeBtnInside: false,
+	      delegate: 'img',
+	      gallery: {enabled: true },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+ 	});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

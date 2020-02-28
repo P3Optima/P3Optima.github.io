@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Product owner: Ready Mix Concrete Inc." />
+<meta name="author" content="EPD Commissioner: Ready Mix Concrete Inc." />
+<meta name="author" content="LCA Practitioner: XXXX" />
+<meta name="author" content="Program Operator: XXXX" />
+<meta name="author" content="Third Party Verifier: First Last" />
+
+<meta name="date" content="2020-02-26" />
+
+<title>32_verificationReport.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">EPD by Company123 at their XXXX facility in XXXX</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://EPDprogramOperator.com/">
+    <span class="fa fa-home"></span>
+     
+    Program Operator
+  </a>
+</li>
+<li>
+  <a href="EPDreport.html">
+    <span class="fa fa-users"></span>
+     
+    EPD Report
+  </a>
+</li>
+<li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Cover
+  </a>
+</li>
+<li>
+  <a href="01_adminInfo.html">
+    <span class="fa fa-user-shield"></span>
+     
+    Admin info
+  </a>
+</li>
+<li>
+  <a href="02_companyInfo.html">
+    <span class="fa fa-address-card"></span>
+     
+    Company info
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-rainbow"></span>
+     
+    Goal and Scope
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="03_studyGoal.html">Study goal</a>
+    </li>
+    <li>
+      <a href="04_productScope.html">Product scope</a>
+    </li>
+    <li>
+      <a href="05_mixSummary.html">Concrete mix summary</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-database"></span>
+     
+    Life cycle inventory
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="06_systemBoundaries.html">System boundaries</a>
+    </li>
+    <li>
+      <a href="07_dataSourceQuality.html">Data sources &amp; quality</a>
+    </li>
+    <li>
+      <a href="08_detailedLCItables.html">Detailed LCI tables</a>
+    </li>
+    <li>
+      <a href="09_transportTables.html">Transport tables</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="10_lciaIndicators.html">
+    <span class="fa fa-ruler"></span>
+     
+    LCIA indicators
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-chart-bar"></span>
+     
+    LCIA results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="11_totImpactSummary.html">Total impact summary</a>
+    </li>
+    <li>
+      <a href="12_A1toA3breakdown.html">A1 to A3 breakdown</a>
+    </li>
+    <li>
+      <a href="13_totImpactStats.html">Total impact statistics</a>
+    </li>
+    <li>
+      <a href="14_detailedBreakdownPlots.html">Detailed breakdown plots</a>
+    </li>
+    <li>
+      <a href="29_detailedLCIAbreakdownTables.html">Detailed breakdown tables</a>
+    </li>
+    <li>
+      <a href="30_additionalEnvInfo.html">Other Env. Info</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="31_references.html">
+    <span class="fa fa-books"></span>
+     
+    References
+  </a>
+</li>
+<li>
+  <a href="32_verificationReport.html">
+    <span class="fa fa-check-square"></span>
+     
+    Verification
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="content" data-toggle="wy-nav-shift">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("text-table-of-contents");
+});
+</script>
+
+<!-- code folding -->
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
+
+
+
+
+<div id="table-of-contents">
+    <h2><a href="#content"></a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#section"></a></li>
+      <li><a href="#section-1"></a></li>
+      <li><a href="#section-2"></a></li>
+      <li><a href="#section-3"></a></li>
+      <li><a href="#section-4"></a></li>
+      <li><a href="#section-5"></a></li>
+      <li><a href="#section-6"></a></li>
+      <li><a href="#section-7"></a></li>
+      <li><a href="#section-8"></a></li>
+      <li><a href="#section-9"></a><ul>
+      <li><a href="#following-xxxxs-epd-program-this-report-contains-a-compliancy-review-for-an-epd-application-focused-on-ready-mix-concrete-mixes-produced-by-company-abc.-this-third-party-review-found-the-detailed-life-cycle-assessment-report-and-epd-to-be-in-compliance-with-the-product-category-rule-developed-by-the-embodied-carbon-network-entitled-pcr-for-ready-mix-concrete-vx.x-feb.-2019.">Following XXXX’s EPD Program this report contains a compliancy review for an EPD application focused on ready mix concrete mixes produced by Company ABC. This third-party review found the detailed life cycle assessment report and EPD to be in compliance with the Product Category Rule developed by the Embodied Carbon Network entitled PCR for ready mix concrete, vX.X Feb. 2019.</a></li>
+      <li><a href="#verification-report-submitted-to-p3-optimas-epd-program"><strong>Verification report submitted to P3 Optima’s EPD Program</strong></a></li>
+      <li><a href="#section-10"></a></li>
+      </ul></li>
+      <li><a href="#summary-of-verification-findings-and-key-issues-addressed">Summary of Verification Findings and Key Issues Addressed</a></li>
+      <li><a href="#justification-of-validation-procedure">Justification of Validation Procedure</a></li>
+      <li><a href="#correspondence-between-applicant-and-verifier">Correspondence between Applicant and Verifier</a></li>
+      <li><a href="#verifier-signed-confirmation-of-validation">Verifier Signed Confirmation of Validation</a></li>
+      <li><a href="#correspondence-between-applicant-and-verifier-1">Correspondence between Applicant and Verifier</a></li>
+      </ul>
+    </div>
+</div>
+
+<div id="main">
+<div id="section" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-1" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-2" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-3" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-4" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-5" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-6" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-7" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-8" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-9" class="section level2 unnumbered">
+<h2></h2>
+<p><br> <br> <br> <br> <br> <br> <br></p>
+<div id="following-xxxxs-epd-program-this-report-contains-a-compliancy-review-for-an-epd-application-focused-on-ready-mix-concrete-mixes-produced-by-company-abc.-this-third-party-review-found-the-detailed-life-cycle-assessment-report-and-epd-to-be-in-compliance-with-the-product-category-rule-developed-by-the-embodied-carbon-network-entitled-pcr-for-ready-mix-concrete-vx.x-feb.-2019." class="section level4 unnumbered">
+<h4>Following XXXX’s EPD Program this report contains a compliancy review for an EPD application focused on ready mix concrete mixes produced by Company ABC. This third-party review found the detailed life cycle assessment report and EPD to be in compliance with the Product Category Rule developed by the Embodied Carbon Network entitled PCR for ready mix concrete, vX.X Feb. 2019.</h4>
+</div>
+<div id="verification-report-submitted-to-p3-optimas-epd-program" class="section level4 unnumbered">
+<h4><strong>Verification report submitted to P3 Optima’s EPD Program</strong></h4>
+<div id="independed-verification-of-an-epd-application-for-ready-mix-concrete-mixes-produced-by-company-abc" class="section level5">
+<h5>Independed verification of an EPD application for ready mix concrete mixes produced by Company ABC</h5>
+</div>
+</div>
+<div id="section-10" class="section level4 unnumbered">
+<h4></h4>
+<div id="verifier-first-last" class="section level5">
+<h5>Verifier: First Last</h5>
+<p>Certified 3rd Party Verifiry with the International EPD System and the CSA Group Date: 26 February 2020</p>
+</div>
+</div>
+</div>
+<div id="summary-of-verification-findings-and-key-issues-addressed" class="section level1 unnumbered">
+<h1>Summary of Verification Findings and Key Issues Addressed</h1>
+<p>Overall, the life cycle inventory (LCI) used for this LCA was comprehensive and relied heavily on recent plant and raw material supply-specific data from Company ABC’s manufacturing facility. Both utility (electricity, gas, water) and waste treatment were based manufacturer’s data stemming from the years 2016, 2017 and mid-2018. Raw material inputs required for manufacturing the panels were based on actual weights and material compositions along with supplier-specific transportation distances and annual material and energy flows used in their facilities. Additionally, region-specific electricity and water mixes were assumed. Given this site and region-specific dataset informed the most important inputs required by the core module, it was concluded that the LCI used in this study was of sufficiently high quality.</p>
+<p>Upon first revision of the detailed LCA report and the summarized EPD report, the author of these documents met all of the mandatory requirements of the PCR Construction products and constructions services, V2.2 2012:01 developed by the International EPD® System. After initial review, the following list provides some key concerns that the EPD Applicant was asked to address before final submission along with a brief statement of the Applicant’s response.</p>
+</div>
+<div id="justification-of-validation-procedure" class="section level1 unnumbered">
+<h1>Justification of Validation Procedure</h1>
+<p>An “on-desk” approach to validating the LCA and associated reports was undertaken. This approach was justified because the client’s manufacturing operation and related raw material suppliers were the only life cycle inventory datasets attained. Given the relatively well-known manufacturing assembly required, the direct inputs and outputs derived for this process and utilized in the LCA could easily be compared with other studies to ensure the unit processes developed for this LCA were in sufficient agreement with well-documented studies. Additionally, the LCA practitioner carrying out the study is an independent consultant who continuously strives to undertake unbiased and high quality LCAs.</p>
+</div>
+<div id="correspondence-between-applicant-and-verifier" class="section level1 unnumbered">
+<h1>Correspondence between Applicant and Verifier</h1>
+<p>The following table lists correspondence between the Applicant and the Verifier:</p>
+Table 5553: <strong>Record of communication between 3rd party verifier and LCA practitioner:</strong>
+<table class="table table-striped" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align:left;width: 50em; ">
+2020-01-02
+</td>
+<td style="text-align:left;width: 50em; ">
+Verifier
+</td>
+<td style="text-align:left;">
+LCA practitioner
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;width: 50em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="verifier-signed-confirmation-of-validation" class="section level1 unnumbered">
+<h1>Verifier Signed Confirmation of Validation</h1>
+<p>As Verifier I hereby confirm that this LCA and EPD meet the strict compliancy requirements of the chosen PCR and the Program Operator.</p>
+<p>Verifier Name: Geoffrey Guest, Ph.D.</p>
+<p>Verifier Signature:</p>
+</div>
+<div id="correspondence-between-applicant-and-verifier-1" class="section level1 unnumbered">
+<h1>Correspondence between Applicant and Verifier</h1>
+<p>The following table lists correspondence between the Applicant and the Verifier:</p>
+Table 5554: <strong>Compliance checklist of all ‘shall’ requirements founds in the PCR</strong>
+<table class="table table-striped" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align:right;width: 5em; ">
+1
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol style="list-style-type: decimal">
+<li>Options when using this PCR
+</td>
+<td style="text-align:left;">
+This sub-product category rule (PCR) addresses UN CPC Group 375â€“Concrete and enables the development of EPDs associated with the production of that product from cradle-to-gate.
+</td>
+<td style="text-align:left;">
+yes
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+2
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol style="list-style-type: decimal">
+<li>Options when using this PCR
+</td>
+<td style="text-align:left;">
+This PCR was developed specifically for use where applicants use the following standards: ASTM C94, CSA A23.1/A23.2, UNSPSC code 30111500. An additional PCR is required for concrete products to outline the additional LCA stages such as formwork, reinforcement and curing.
+</td>
+<td style="text-align:left;">
+yes
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+3
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol style="list-style-type: decimal">
+<li>Options when using this PCR
+</td>
+<td style="text-align:left;">
+While this PCR will likely be used primarily in North America, it may be used in other regions where program operators deem it appropriate.
+</td>
+<td style="text-align:left;">
+yes
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+4
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="2" style="list-style-type: decimal">
+<li>General Information
+</td>
+<td style="text-align:left;">
+The validity of the EPDÂ® is set at five years â€“ in accordance with ISO 21930:2017 â€“ after which if after five years, relevant changes in the product category or other relevant factors have occurred (for example, evolution of LCA methodology in ISO 21930:2017), the document will be revised.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+5
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="2" style="list-style-type: decimal">
+<li>General Information
+</td>
+<td style="text-align:left;">
+If any environmental indicators for products included in the average differ by more than +/- 10%, the minimum and maximum of the population or dataset shall be reported.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+6
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="2" style="list-style-type: decimal">
+<li>General Information
+</td>
+<td style="text-align:left;">
+Manufacturers seeking to benchmark their individual type III EPDs against an industry average EPD shall have participated in the industry average EPD.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+7
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="2" style="list-style-type: decimal">
+<li>General Information
+</td>
+<td style="text-align:left;">
+Comparison based on LCA A1-A3 data, shall be made only if the same secondary data sets, and all subsequent life cycle stages are equivalent for both EPDs.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+8
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="2" style="list-style-type: decimal">
+<li>General Information
+</td>
+<td style="text-align:left;">
+The EPD shall either be based on a declared unit or a functional unit.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+9
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="3" style="list-style-type: decimal">
+<li>Declared functional unit
+</td>
+<td style="text-align:left;">
+No functional unit is defined in this PCR. However, performance characteristics of concrete shall be reported including: A. UNSPC Product code and CSI Specification number; and B. specified compressive strength at specified age in days (e.g., 4,000 psi (28 MPa) at 28 days). Compressive strength can be presented in either SI or US units or both as appropriate for the application.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+10
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="3" style="list-style-type: decimal">
+<li>Declared functional unit
+</td>
+<td style="text-align:left;">
+Since this PCR only covers Module A (manufacturing), a declared unit shall be used. The declared unit shall be one cubic meter of concrete. Data may additionally be presented per U.S. cubic yard or tonnes (1,000 kg).
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+11
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="4" style="list-style-type: decimal">
+<li>Units and quantities
+</td>
+<td style="text-align:left;">
+Compressive strength can be presented in either SI or US units or both as appropriate for the application.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+12
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A1 shall include the constituents of concrete listed in Table 1
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+13
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A2 shall assume all long haul transport by bulk carriers (greater than 322 km (200 mi)) do not typically return empty and thus can use the US LCI dataset which includes 35% additional distance to account for this
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+14
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A2 shall assume that all short haul transport (local trucks and dump trucks) return empty. Thus, one way transport distance shall be multiplied by (2/1.35) to reflect two way transport and eliminate the 35% additional distance included in the US LCI;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+15
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A3 shall include transportation activities at the concrete manufacturing site;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+16
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A3 shall include an assumption of 5% material loss unless product specific data is available and transparently reported in the project LCA report underlying the EPD;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+17
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A3 shall include ancillary materials which include, but are not limited to, lubricating oils, engine oils, &amp; other consumable operations equipment maintenance (OEM) products;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+18
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A3 shall include final end of life treatment for any manufacturing waste. For example, admixture and ancillary material packaging. Concrete returned from construction sites is not included in A3; it is included in the construction process stage A5;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+19
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+For all truck (transit) mixing plant operations covered in the EPD, a default factor of 30% of all mixing truck (fleet) energy use is to be allocated to module A3, regardless of whether A4 is reported. This default is to be applied and quoted in the EPD unless a specific power takeoff analysis has been completed and is transparently documented in the project LCA report underlying the EPD. Per Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users, SAFETEA-LU, Section 11144 â€“ PTO Report, SB/SE Research â€“ Philadelphia, Project IDâ€“PHL0019, July 2007, Appendix E.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+20
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A4 is optional. If provided, a description of the reference scenarios shall be part of the EPD
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+21
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A4, if included, shall include: backhaul; and the remaining 70% of mixing truck (fleet) energy.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+22
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+A5 is optional, but when placement of concrete is included, it shall include the impacts of concrete ordered but not used and returned. Returned concrete shall be considered a waste product and can be used as a burden free input until the point at which it is recovered and processed for further use, and that impacts from recovery and processing operations shall be included in Modules A1-A3 of the system using the secondary material.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+23
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+ISO 21930:2017 (Table 3) shall be supplemented by Table 2 with additional detail on the upstream data to use in developing the EPD.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+24
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+As noted in ISO 21930:2017 SI units shall be used. Optionally, EPD may provide both US and metric units using the conversion factors given in section 7.1.11.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+25
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+The following materials shall be considered recovered materials and not co-products as is consistent with version 1 of the Concrete PCR and the ASTM PCR for Precast Concrete: fly ash; blast furnace slag (as a cement); and silica fume.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+26
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+As in the ASTM PCR for Precast Concrete, concrete recycling processes may be treated as closed-loop recycling when the recycled concrete is used as a material input for the production of manufactured concrete and concrete masonry products. In this case only the flows and impacts associated with transportation, recovery and crushing of the recycled concrete shall be taken into account and the need for allocation is avoided since the use of secondary material displaces the use of virgin (primary) materials.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+27
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+If different allocation options are relevant and a deviation of greater than 20% is a foreseen outcome, a sensitivity analysis shall be initiated. These different allocation approaches and data sets shall be documented and declared in the EPD.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+28
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="5" style="list-style-type: decimal">
+<li>General System Boundaries
+</td>
+<td style="text-align:left;">
+Where potable water from a municipal source is used, the water treatment and distribution systems shall be included as an upstream process, which will have its own resource use and discharges. The impacts of water desalination shall be included.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+29
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+A simple visual representation of ready mixed concrete is not relevant and thus not required.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+30
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+As the percentage of material components can be considered proprietary information, the list of materials should be reported in order of greatest mass per mix.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+31
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+Include the table given in section 9.2.C
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+32
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+EPD shall include the note: â€œThe product category rules for this EPD recognize fly ash, silica fume and slag as recovered materials and thus the environmental impacts allocated to these materials are limited to the treatment and transportation required to use as a concrete material inputâ€;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+33
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+The EPD shall include a table summarizing the life cycle stages included in the EPD as per section 9.3.B
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+34
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+The EPD shall include A table outlining the primary sources of data used to complete the upstream material LCI background data including the date or version number;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+35
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+For industry average EPDs, the EPD shall include the date and source of industry data survey including a list of all companies who participated in the EPD data;
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+36
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+The EPD shall include one of three statements, addressing GWP 100 (years), ODP, EP, AP, and POCP impact categories as given in section 9.3.E.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+37
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+Abiotic depletion potential for non-fossil mineral resources (ADPelements) LCA results shall be included in the EPD.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+38
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+Many of the impacts and inventory items included in ISO 21930:2017 are emerging and have high levels of uncertainty. This shall be recognized within the EPD with the following note: â€˜Emerging LCA impact categories and inventory items are still under development and can have high levels of uncertainty that preclude international acceptance pending further development. Use caution when interpreting data in these categories.â€™ (Can be listed as given in section 9.5.A)
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+39
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+When upstream data specified in the PCR and/or used in calculating the EPD do not have data for select impact categories or inventory items, they shall be reported as an â€˜xâ€™ or â€˜-â€˜ and not zero and qualified with the note: â€˜Not all LCA datasets for upstream materials include these impact categories and thus results may be incomplete. Use caution when interpreting data in these categories.â€™
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+40
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+The following references shall be provided at a minimum in the EPD: ISO 21930:2017 Sustainability in Building Construction â€” Environmental Declaration of Building Products
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+41
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+When a product specific EPD is aligned with an industry average EPD, the same LCA modeling software and version and background data shall be used to create the EPD, OR the LCA modeling software and version shall test representative samples of the regionally specific industry average benchmark data and include in the EPD a report of the maximum percent difference for environmental impact categories: global warming potential, acidification potential, ozone depletion potential and smog creation potential. If a different LCA tool is selected, it shall be used to calculate environmental indicators for a sample of representative mixes taken from the published industry average LCA report. The variation of results produced by the selected LCA modeling software and verson, compared to the published environmental indicators in the industry EPD shall be reported as a maximum percent variation for GWP 100, AP, EP or POCP. This is to provide transparency on the variability of results that stem from background data and models.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+42
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+An EPD shall be recalculated when changes to manufacturing practices are reasonably expected to result in a significant change to the EPD results.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+43
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+An EPD shall be recalculated when its period of validity is complete or when updates to the PCR result in significant changes to the EPD results.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+44
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+The default LCA/LCI data noted in Tables A1 of appendix A shall be used unless manufacturer and product specific EPD results are available.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+45
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+<ol start="6" style="list-style-type: decimal">
+<li>Content of the EPD
+</td>
+<td style="text-align:left;">
+Tables A2 and A3 of appendix A shall be used for all applications unless an alternate standardized regional database is published as a clarification to the Concrete PCR to enable more accurate yet still standardized upstream LCA data. The data noted here shall be used even if more current data is published unless a revised version of Appendix A is issued as a clarification to the PCR.
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+NA
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+NA
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+NA
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 5em; ">
+NA
+</td>
+<td style="text-align:left;width: 20em; width: 40em; width: 5em; ">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+</tbody>
+</table></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+</div>
+</div>
+
+
+</div>
+
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Ready Mix Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Ready Mix Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> LCA Practitioner: XXXX</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operator: XXXX</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Third Party Verifier: First Last</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> 26 February 2020</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+ 	    $('#content img')
+ 	  .addClass("image-lb");
+  $('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      closeBtnInside: false,
+	      delegate: 'img',
+	      gallery: {enabled: true },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+ 	});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
