@@ -8,14 +8,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="author" content="Product owner: Ready Mix Concrete Inc." />
-<meta name="author" content="EPD Commissioner: Ready Mix Concrete Inc." />
-<meta name="author" content="LCA Practitioner: P3 Optima Ltd." />
-<meta name="author" content="Program Operator: XXXX" />
-<meta name="author" content="Third Party Verifier: First Last" />
+<meta name="author" content="Product owner: Concrete Inc." />
+<meta name="author" content="EPD Commissioner: Concrete Inc." />
+<meta name="author" content="LCA practitioner: P3 Optima" />
+<meta name="author" content="Program Operation: P3 Optima" />
+<meta name="author" content="3rd Party Verifier: FirstName LastName" />
 
 
-<title>10_lciaIndicators.utf8</title>
+<title>LCIA Indicators</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -49,15 +49,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">EPD by Company123 at their XXXX facility in XXXX</a>
+      <a class="navbar-brand" href="index.html"> <div> <img id="logo" style="width: 150px;" src="figures/EPDdevLogo.png"/>  An EPD for Company123's XXX facility in City </div></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="https://P3Optima.com/">
+  <a href="http://P3Optima.com/">
     <span class="fa fa-home"></span>
      
-    P3 Optimar
+    P3 Optima
   </a>
 </li>
 <li>
@@ -205,10 +205,13 @@ $(document).ready(function () {
 </nav>
 
 
+<div id="header">
+<h1 class="title">LCIA Indicators</h1>
+</div>
 
 
 <div id="table-of-contents">
-    <h2><a href="#content"></a></h2>
+    <h2><a href="#content">LCIA Indicators</a></h2>
     <div id="text-table-of-contents">
       <ul>
       <li><a href="#section"></a></li>
@@ -273,7 +276,7 @@ $(document).ready(function () {
 <div id="environmental-indicators-and-inventory-metrics" class="section level1 unnumbered">
 <h1>Environmental Indicators and Inventory Metrics</h1>
 <p>Per the PCR, this EPD supports the life cycle impact assessment indicators and inventory metrics as listed in the tables below. As specified in the PCR, the US EPA Tool for the Reduction and Assessment of Chemical and Other Environmental Impacts (TRACI), version 2.1, 2012 impact categories were utilized as they provide a North American context for the mandatory category indicators to be included in the EPD. Additionally, the PCR requires a set of inventory metrics to be reported with the LCIA indicators (see tables below).</p>
-Table 353: <strong>Life cycle impact categories and life cycle inventory metrics</strong>
+Table 2012: <strong>Life cycle impact categories and life cycle inventory metrics</strong>
 <table class="table table-striped" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -375,7 +378,7 @@ kg NOx-Eq
 Abiotic Depletion-elements
 </td>
 <td style="text-align:left;width: 8em; ">
-ADPelement
+ADPel
 </td>
 <td style="text-align:left;width: 8em; ">
 kg Sbeq
@@ -389,7 +392,7 @@ kg Sbeq
 Abiotic Depletion-fossil fuels
 </td>
 <td style="text-align:left;width: 8em; ">
-ADPfuel
+ADPff
 </td>
 <td style="text-align:left;width: 8em; ">
 kg Sbeq
@@ -538,10 +541,10 @@ kg
 </tbody>
 </table>
 <p>A summary description of each of the impact categories and inventory metrics is provided in the following table:</p>
-Table 354: <strong>Definitions of life cycle impact categories and life cycle inventory metrics</strong>
+Table 2013: <strong>Definitions of life cycle impact categories and life cycle inventory metrics</strong>
 <table class="table table-striped" style="font-size: 10px; margin-left: auto; margin-right: auto;">
 <tbody>
-<tr grouplength="5">
+<tr grouplength="6">
 <td colspan="2" style="border-bottom: 1px solid;">
 <strong>Midpoint impact categories</strong>
 </td>
@@ -586,7 +589,15 @@ Photochemical Ozone Creation/Smog Potential (POCP) (kg O3-eq)
 Ozone is protective in the stratosphere, but on the ground-level, it is toxic to humans in high concentration. Photochemical ozone, also called ground-level ozone, is formed by the reaction of volatile organic compounds and nitrogen oxides in the presence of heat and sunlight. The impact category depends largely on the amounts of carbon monoxide (CO), Sulphur dioxide (SO2), nitrogen oxide (NO), ammonium and NMVOC (non-methane volatile organic compounds). Photochemical ozone creation potential (also known as summer smog) for emission of substances to air is calculated with the United Nations Economic Commission for 22 Europe (UNECE) trajectory model (including fate) and expressed using the reference unit, kg ethylene (C2H4) equivalent.
 </td>
 </tr>
-<tr grouplength="9">
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Abiotic Depletion Potential (ADPel and ADPff) (kg Sb-eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+The main concern of this category is the health of humans and the ecosystem and how it is affected by the extraction of minerals and fossil fuels, which are inputs into the system. For each extraction of minerals and fossil fuels, the abiotic depletion factor is determined. This indicator is on a global scale and is based on the concentration reserves and rate of deaccumulation. The results are presented in units of the reference element strontium (i.e. Sb). For the purposes of this EPD, this impact category is split between mineral elements (i.e. ADPel) and fossil fuels (i.e. ADPff).
+</td>
+</tr>
+<tr grouplength="10">
 <td colspan="2" style="border-bottom: 1px solid;">
 <strong>Inventory metrics</strong>
 </td>
@@ -663,6 +674,14 @@ Concrete hazardous waste (CHW) (kg)
 This indicator considers the amount of hazardous waste waste generated at the concrete facility. The units of measure are in kilograms of waste generated.
 </td>
 </tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Concrete non-hazardous waste (CNHW) (kg)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator considers the direct amount of non-hazardous waste generated at the concrete facility. The units of measure are in kilograms of waste generated.
+</td>
+</tr>
 </tbody>
 </table>
 <p>It should be noted that emerging LCA impact categories and inventory items are still under development and can have high levels of uncertainty that preclude international acceptance pending further development. Use caution when interpreting data in the following categories.</p>
@@ -695,12 +714,12 @@ This indicator considers the amount of hazardous waste waste generated at the co
 </div>
 
 <div id="postamble" data-toggle="wy-nav-shift" class="status">
-<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Ready Mix Concrete Inc.</p>
-<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Ready Mix Concrete Inc.</p>
-<p class="author"><span class="glyphicon glyphicon-user"></span> LCA Practitioner: P3 Optima Ltd.</p>
-<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operator: XXXX</p>
-<p class="author"><span class="glyphicon glyphicon-user"></span> Third Party Verifier: First Last</p>
-<p class="date"><span class="glyphicon glyphicon-calendar"></span> Original Publish Date: 28 February 2020 <br> Updated on: no updates <br> EPD valid until: 26 February 2025</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Concrete Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> LCA practitioner: P3 Optima</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operation: P3 Optima</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> 3rd Party Verifier: FirstName LastName</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> Original Publish Date: 10 March 2020 <br> Updated on: no updates <br> EPD valid until: 09 March 2025</p>
 </div>
 
 
