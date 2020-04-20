@@ -47,7 +47,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"> <div> <img id="logo" style="width: 150px;" src="figures/EPDdevLogo.png"/>  An EPD for Company123's XXX facility in City </div></a>
+      <a class="navbar-brand" href="index.html"> <div> <img id="logo" style="width: 150px;" src="figures/admin/EPDdevLogo.png"/>  </div></a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -102,7 +102,7 @@
       <a href="04_productScope.html">Product scope</a>
     </li>
     <li>
-      <a href="05_mixSummary.html">Concrete mix summary</a>
+      <a href="05_productSummary.html">Product summary</a>
     </li>
   </ul>
 </li>
@@ -180,7 +180,7 @@
   </a>
 </li>
 <li>
-  <a href="https://p3optima.github.io/EPDregistry/">
+  <a href="https://p3optima.com/">
     <span class="fa fa-list"></span>
      
     EPD Registry
@@ -259,7 +259,7 @@ $(document).ready(function () {
 <div id="data-sources-and-data-quality-assessment" class="section level2 unnumbered">
 <h2>Data Sources and Data Quality Assessment</h2>
 <p>The following table summarizes the facility’s (i.e. A3) electricity consumption and generation (if applicable), process/space heating requirements, fuel inputs for on-site machinery, and waste generation.</p>
-Table 13: <strong>Inputs required by facility from 2019-01-01 to 2019-12-31(364 days) to produce 33000 cubic meters</strong>
+Table 11: <strong>Inputs required by facility from 2019-01-01 to 2019-12-31 (364 days) to produce 12000 1 cubic meter of concrete</strong>
 <table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -385,7 +385,7 @@ kg
 </tr>
 </tbody>
 </table>
-Table 14: <strong>Recovered on-site energy resources either utilized on-site or off-site</strong>
+Table 12: <strong>Recovered on-site energy resources either utilized on-site or off-site</strong>
 <table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -420,7 +420,7 @@ on-site
 </tr>
 </tbody>
 </table>
-Table 15: <strong>Reused or recycled components/materials at the A3 facility site</strong>
+Table 13: <strong>Reused or recycled components/materials at the A3 facility site</strong>
 <table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -460,13 +460,13 @@ off-site
 <li><strong>Electricity</strong>: Electricity generation and consumption values were based on monthly utility bills.</li>
 <li><strong>Process/space heating</strong>: Electricity heat requirements were based on monthly utility bills.</li>
 <li><strong>Fuel required for machinery:</strong>: Energy requirements for machinery were based on fuel purchase receipts.</li>
-<li><strong>Waste generation:</strong>: Please provide an explanation of how the above waste generation values were determined:</li>
+<li><strong>Waste generation:</strong>: Wash water consumption was based on water meter readings specific to these purpoes. Waste values were based on waste management receipts.</li>
 <li><strong>Recovered energy:</strong>: Actual roadway distance to waste and sorting/recycling facilities were calculated via Google Maps. Empty returns were accounted for.</li>
 <li><strong>Recycled/reused material/components:</strong>: Recovered energy (both on and off-site) was measured based on volume and energy estimates using various metering devices.</li>
 <li><strong>Module A1 material losses:</strong>: The above estimates were based on case-by-case basis depending on the material/component type.</li>
 </ul>
-<p>The following tables (i.e. modules A1 to A3) depict a list of assumed life cycle inventory utilized in the LCA modelling to generate the impact results. An assessment of the quality of each LCI activity utilized is also provided.</p>
-Table 16: <strong>LCI inputs assumed for module A1 (i.e. raw material supply)</strong>
+<p>The following tables (i.e. modules A1 to A3) depict a list of assumed life cycle inventory utilized in the LCA modelling to generate the impact results. An assessment of the quality of each LCI activities utilized from various sources is also provided.</p>
+Table 14: <strong>LCI inputs assumed for module A1 (i.e. raw material supply)</strong>
 <table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -607,13 +607,13 @@ Tap water
 market for tap water/RoW/kilogram
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 British Columbia
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -712,16 +712,16 @@ Alberta
 Sand
 </td>
 <td style="text-align:left;width: 10em; vertical-align: top !important;" rowspan="5">
-silica sand production/DE/kilogram
+Note 0 : Note 1 : gravel and sand quarry operation/RoW/kilogram NA ; ;
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 British Columbia
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -763,7 +763,7 @@ v3.4 in 2017
 </tr>
 </tbody>
 </table>
-Table 17: <strong>LCI inputs assumed for module A2 (i.e. transport of A1 inputs)</strong>
+Table 15: <strong>LCI inputs assumed for module A2 (i.e. transport of A1 inputs)</strong>
 <table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -796,13 +796,13 @@ General use cement- freight transport via Truck
 transport, freight, lorry 16-32 metric ton, EURO3/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good, transport activities are GLO/RoW averages
@@ -850,13 +850,13 @@ Gravel- freight transport via Truck
 transport, freight, lorry 7.5-16 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good, transport activities are GLO/RoW averages
@@ -904,13 +904,13 @@ Sand- freight transport via Truck
 transport, freight, lorry 7.5-16 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good, transport activities are GLO/RoW averages
@@ -958,13 +958,13 @@ xyz Admix- freight transport via Truck
 transport, freight, lorry 16-32 metric ton, EURO3/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good, transport activities are GLO/RoW averages
@@ -1006,7 +1006,7 @@ v3.4 in 2017
 </tr>
 </tbody>
 </table>
-Table 18: <strong>LCI inputs assumed for module A3 (i.e. manufacutring of mixes)</strong>
+Table 16: <strong>LCI inputs assumed for module A3 (i.e. manufacutring of mixes)</strong>
 <table class="table table-condensed" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -1039,13 +1039,13 @@ Grid electricity
 market for electricity, medium voltage/CA-QC/kilowatt hour
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 CA-QC
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Very good
@@ -1093,13 +1093,13 @@ Hazardous waste
 treatment of hazardous waste, underground deposit/RoW/kilogram
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1147,13 +1147,13 @@ Loader, moving aggregaes, Diesel
 excavation, skid-steer loader/RoW/cubic meter
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1201,13 +1201,13 @@ Non-hazardous waste
 treatment of waste concrete, not reinforced, collection for final disposal/RoW/kilogram
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1255,13 +1255,13 @@ Process heat
 heat production, natural gas, at industrial furnace &gt;100kW/RoW/megajoule
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1309,13 +1309,13 @@ Propane, heating mix
 propane, burned in building machine/GLO/megajoule
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 GLO
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1363,13 +1363,13 @@ Rooftop PV
 electricity production, photovoltaic, 3kWp slanted-roof installation, multi-Si, panel, mounted/CA-ON/kilowatt hour
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 CA-ON
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1417,13 +1417,13 @@ Transport of Cardboard packaging
 transport, freight, lorry 7.5-16 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1471,13 +1471,13 @@ Transport of Hazardous waste
 transport, freight, lorry 3.5-7.5 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1525,13 +1525,13 @@ Transport of High-level radioactive waste
 transport, freight, lorry 3.5-7.5 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1579,13 +1579,13 @@ Transport of Non-hazardous waste
 transport, freight, lorry 3.5-7.5 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1633,13 +1633,13 @@ Transport of Wash water
 transport, freight, lorry 7.5-16 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1687,13 +1687,13 @@ Truck and fuel type
 transport, freight, lorry 16-32 metric ton, EURO6/RoW/ton kilometer
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1741,13 +1741,13 @@ Wash water
 market for wastewater from concrete production/RoW/cubic meter
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
-ecoinvent v3.4
+ecoinvent v3.5
 </td>
 <td style="text-align:left;width: 4em; vertical-align: top !important;" rowspan="5">
 RoW
 </td>
 <td style="text-align:left;width: 3em; vertical-align: top !important;" rowspan="5">
-v3.4 in 2017
+v3.5 in 2018
 </td>
 <td style="text-align:left;width: 19em; ">
 . Technology: Good
@@ -1793,16 +1793,16 @@ v3.4 in 2017
 <h3>Data Quality Assessment</h3>
 <p>Data quality/variability requirements, as specified in the PCR, are applied. This section describes the achieved data quality relative to the ISO 14044:2006 requirements. Data quality is judged based on its precision (measured, calculated or estimated), completeness (e.g., unreported emissions), consistency (degree of uniformity of the methodology applied within a study serving as a data source) and representativeness (geographical, temporal, and technological).</p>
 <p><strong>Precision</strong>: Through measurement and calculation, the manufacturers collected and provided primary data on their annual production. For accuracy, the LCA practitioner and 3rd Party Verifier validated the plant gate-to-gate data.</p>
-<p><strong>Completeness</strong>: All relevant specific processes, including inputs (raw materials, energy and ancillary materials) and outputs (emissions and production volume) were considered and modeled to represent the specified and declared products. The relevant background materials and processes were taken from ecoinvent v3.4 LCI databases where relatively recent Canadian-specific electricity inputs were utilized.</p>
-<p><strong>Consistency</strong>: To ensure consistency, the LCI modeling of the production weighted input and output LCI data for the declared products used the same modeling structure across the respective product systems, which consisted of raw material inputs and ancillary material, energy flows, water resource inputs, product and co-products outputs, returned and recovered concrete materials, emissions to air, water and soil, and waste recycling and treatment. The same background LCI datasets the ecoinvent v3.4 database were used across all product systems. Crosschecks concerning the plausibility of mass and energy flows were continuously conducted. The LCA team conducted mass and energy balances at the plant and selected process level to maintain a high level of consistency.</p>
-<p><strong>Reproducibility</strong>: Internal reproducibility is possible since the data and the models are stored and available in a machine readable project file for all foreground and background processes, and in P3 Optima’s proprietary concrete LCA calculator* for all production facility and mix-specific calculations. A considerable level of transparency is provided throughout the LCA report as the specifications and material quantity make-up for the declared products are presented and key primary and secondary LCI data sources are summarized. The provision of more detailed data to allow full external reproducibility was not possible due to reasons of confidentiality.</p>
-<p>*P3 Optima has developed a proprietary tool that allows the calculation of PCR-compliant LCA results for ready-mixed concrete product mix designs. The tool auto-calculates results by scaling base-unit technosphere inputs (i.e. 1 kg portland cement, 1 kWh electricity, etc.) to replicate the reference flow conversions that take place in any typical LCA software like openLCA or SimaPro. The tool was tested against several LCAs performed in openLCA and the tool generated identical results to those realized in openLCA across every impact category and inventory metric (where comparisons could be readily made).</p>
+<p><strong>Completeness</strong>: All relevant specific processes, including inputs (raw materials, energy and ancillary materials) and outputs (emissions and production volume) were considered and modeled to represent the specified and declared products. The majority of relevant background materials and processes were taken from ecoinvent v3.5 LCI datasets where relatively recent Canadian-specific electricity inputs were utilized. The most relevant EPDs requaring key A1 inputs were also utilized where readily available.</p>
+<p><strong>Consistency</strong>: To ensure consistency, the same modeling structure across the respective product systems was utilized for all inputs, which consisted of raw material inputs and ancillary material, energy flows, water resource inputs, product and co-products outputs, returned and recovered Ready Mix Concrete materials, emissions to air, water and soil, and waste recycling and treatment. The same background LCI datasets from the ecoinvent v3.5 database were used across all product systems. Crosschecks concerning the plausibility of mass and energy flows were continuously conducted. The LCA team conducted mass and energy balances at the plant and selected process level to maintain a high level of consistency.</p>
+<p><strong>Reproducibility</strong>: Internal reproducibility is possible since the data and the models are stored and available in a machine readable project file for all foreground and background processes, and in P3 Optima’s proprietary Ready Mix Concrete LCA calculator* for all production facility and product-specific calculations. A considerable level of transparency is provided throughout the detailed LCA report as the specifications and material quantity make-up for the declared products are presented and key primary and secondary LCI data sources are summarized. The provision of more detailed publicly accessible data to allow full external reproducibility was not possible due to reasons of confidentiality.</p>
+<p>*P3 Optima has developed a proprietary tool that allows the calculation of PCR-compliant LCA results for Ready Mix Concrete product designs. The tool auto-calculates results by scaling base-unit technosphere inputs (i.e. 1 kg sand, 1 kWh electricity, etc.) to replicate the reference flow conversions that take place in any typical LCA software like openLCA or SimaPro. The tool was tested against several LCAs performed in openLCA and the tool generated identical results to those realized in openLCA across every impact category and inventory metric (where comparisons could be readily made).</p>
 <p><strong>Representativeness</strong>: The representativeness of the data is summarized as follows.</p>
 <ul>
 <li>Time related coverage of the manufacturing processes’ primary collected data from 2019-01-01 to 2019-12-31.</li>
-<li>Upstream (background) LCI data was either the PCR specified default or more appropriate LCI datasets as found in the Canadian-adjusted ecoinvent v3.4 database, 2017.</li>
-<li>Geographical coverage for the cement and concrete plant operations is Canada; other upstream and background processes are based on US, North American, or global average data and adjusted to regional electricity mixes when relevant.</li>
-<li>Technological coverage is typical or average – specific to the participating facilities for all primary data.</li>
+<li>Upstream (background) LCI data was either the PCR specified default or more appropriate LCI datasets as found in the Canadian-adjusted ecoinvent v3.5 database.</li>
+<li>Geographical coverage for inputs required by the A3 facility(ies) is representative of its region of focus; other upstream and background processes are based on US, North American, or global average data and adjusted to regional electricity mixes when relevant.</li>
+<li>Technological coverage is typical or average and specific to the participating facilities for all primary data.</li>
 </ul>
 </div>
 </div>
@@ -1816,7 +1816,7 @@ v3.4 in 2017
 <p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Ready Mix Inc.</p>
 <p class="author"><span class="glyphicon glyphicon-user"></span> Program Operation: P3 Optima</p>
 <p class="author"><span class="glyphicon glyphicon-user"></span> 3rd Party Verifier: FirstName LastName</p>
-<p class="date"><span class="glyphicon glyphicon-calendar"></span> Original Publish Date: 23 March 2020 <br> Updated on: no updates <br> EPD valid until: 22 March 2025</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> Original Publish Date: 20 April 2020 <br> Updated on: no updates <br> EPD valid until: 19 April 2025</p>
 </div>
 
 
