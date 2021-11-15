@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Product owner: Ready Mix Inc." />
+<meta name="author" content="EPD Commissioner: Ready Mix Inc." />
+<meta name="author" content="Program Operation: P3 Optima" />
+<meta name="author" content="3rd Party Verifier: FirstName LastName" />
+
+
+<title>Detailed breakdown plots</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> <div> <img id="logo" style="width: 150px;" src="figures/admin/EPDdevLogo.png"/>  </div></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://p3optima.com/">
+    <span class="fa fa-home"></span>
+     
+    P3 Optima
+  </a>
+</li>
+<li>
+  <a href="EPDreport.html">
+    <span class="fa fa-users"></span>
+     
+    EPD Report
+  </a>
+</li>
+<li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Cover
+  </a>
+</li>
+<li>
+  <a href="01_adminInfo.html">
+    <span class="fa fa-user-shield"></span>
+     
+    Admin info
+  </a>
+</li>
+<li>
+  <a href="02_companyInfo.html">
+    <span class="fa fa-address-card"></span>
+     
+    Company info
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-rainbow"></span>
+     
+    Goal and Scope
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="03_studyGoal.html">Study goal</a>
+    </li>
+    <li>
+      <a href="04_productScope.html">Product scope</a>
+    </li>
+    <li>
+      <a href="05_productSummary.html">Product summary</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-database"></span>
+     
+    Life cycle inventory
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="06_systemBoundaries.html">System boundaries</a>
+    </li>
+    <li>
+      <a href="07_dataSourceQuality.html">Data sources &amp; quality</a>
+    </li>
+    <li>
+      <a href="08_detailedLCItables.html">Detailed LCI tables</a>
+    </li>
+    <li>
+      <a href="09_transportTables.html">Transport tables</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="10_lciaIndicators.html">
+    <span class="fa fa-ruler"></span>
+     
+    LCIA indicators
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-chart-bar"></span>
+     
+    LCIA results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="11_totImpactSummary.html">Total impact summary</a>
+    </li>
+    <li>
+      <a href="12_A1toA3breakdown.html">A1 to A3 breakdown</a>
+    </li>
+    <li>
+      <a href="13_totImpactStats.html">Total impact statistics</a>
+    </li>
+    <li>
+      <a href="14_detailedBreakdownPlots.html">Detailed breakdown plots</a>
+    </li>
+    <li>
+      <a href="29_detailedLCIAbreakdownTables.html">Detailed breakdown tables</a>
+    </li>
+    <li>
+      <a href="30_additionalEnvInfo.html">Other Env. Info</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="31_references.html">
+    <span class="fa fa-books"></span>
+     
+    References
+  </a>
+</li>
+<li>
+  <a href="32_verificationReport.html">
+    <span class="fa fa-check-square"></span>
+     
+    Verification
+  </a>
+</li>
+<li>
+  <a href="https://p3optima.com/">
+    <span class="fa fa-list"></span>
+     
+    EPD Registry
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="content" data-toggle="wy-nav-shift">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("text-table-of-contents");
+});
+</script>
+
+<!-- code folding -->
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
+
+
+<div id="header">
+<h1 class="title">Detailed breakdown plots</h1>
+</div>
+
+
+<div id="table-of-contents">
+    <h2><a href="#content">Detailed breakdown plots</a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#section"></a></li>
+      <li><a href="#section-1"></a></li>
+      <li><a href="#section-2"></a></li>
+      <li><a href="#section-3"></a></li>
+      <li><a href="#section-4"></a></li>
+      <li><a href="#section-5"></a></li>
+      <li><a href="#section-6"></a></li>
+      <li><a href="#stacked-bar-impact-comparison-charts">Stacked bar impact comparison charts</a><ul>
+      <li><a href="#environmental-impact-acidification">environmental impact: acidification</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#environmental-impact-eutrophication">environmental impact: eutrophication</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-1">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-1">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-1">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-1">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-1">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-1">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-1">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-1">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#environmental-impact-global-warming">environmental impact: global warming</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-2">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-2">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-2">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-2">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-2">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-2">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-2">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-2">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#environmental-impact-ozone-depletion">environmental impact: ozone depletion</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-3">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-3">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-3">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-3">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-3">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-3">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-3">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-3">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#environmental-impact-photochemical-oxidation">environmental impact: photochemical oxidation</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-4">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-4">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-4">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-4">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-4">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-4">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-4">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-4">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#abiotic-depletion-elements">Abiotic Depletion-elements</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-5">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-5">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-5">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-5">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-5">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-5">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-5">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-5">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#abiotic-depletion-fossil-fuels">Abiotic Depletion-fossil fuels</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-6">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-6">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-6">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-6">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-6">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-6">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-6">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-6">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#land-filling-bulk-waste">land filling: bulk waste</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-7">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-7">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-7">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-7">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-7">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-7">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-7">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-7">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#land-filling-hazardous-waste">land filling: hazardous waste</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-8">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-8">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-8">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-8">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-8">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-8">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-8">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-8">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#total-primary-energy">Total primary energy</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-9">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-9">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-9">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-9">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-9">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-9">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-9">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-9">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#renewable-energy">Renewable energy</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-10">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-10">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-10">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-10">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-10">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-10">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-10">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-10">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#non-renewable-energy">Non-renewable energy</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-11">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-11">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-11">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-11">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-11">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-11">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-11">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-11">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#water-depletion-wdp">water depletion: WDP</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-12">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-12">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-12">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-12">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-12">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-12">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-12">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-12">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#non-renewable-resources">Non-Renewable Resources</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-13">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-13">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-13">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-13">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-13">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-13">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-13">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-13">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      <li><a href="#renewable-resources">Renewable Resources</a><ul>
+      <li><a href="#mix-designs-15-to-20mpa-14">Mix designs: 15 to 20MPa</a></li>
+      <li><a href="#mix-designs-21-to-25mpa-14">Mix designs: 21 to 25MPa</a></li>
+      <li><a href="#mix-designs-26-to-30mpa-14">Mix designs: 26 to 30MPa</a></li>
+      <li><a href="#mix-designs-31-to-35mpa-14">Mix designs: 31 to 35MPa</a></li>
+      <li><a href="#mix-designs-36-to-40mpa-14">Mix designs: 36 to 40MPa</a></li>
+      <li><a href="#mix-designs-41-to-45mpa-14">Mix designs: 41 to 45MPa</a></li>
+      <li><a href="#mix-designs-46-to-50mpa-14">Mix designs: 46 to 50MPa</a></li>
+      <li><a href="#mix-designs-51-to-55mpa-14">Mix designs: 51 to 55MPa</a></li>
+      </ul></li>
+      </ul></li>
+      </ul>
+    </div>
+</div>
+
+<div id="main">
+<div id="section" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-1" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-2" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-3" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-4" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-5" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-6" class="section level2 unnumbered">
+<h2></h2>
+<p><br> <br></p>
+</div>
+<div id="stacked-bar-impact-comparison-charts" class="section level1 tabset tabset-fade tabset-pills">
+<h1>Stacked bar impact comparison charts</h1>
+<div id="environmental-impact-acidification" class="section level2 tabset tabset-fade tabset-pills">
+<h2>environmental impact: acidification</h2>
+<div id="mix-designs-15-to-20mpa" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa2.png" /> Figure 251: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa3.png" /> Figure 252: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa4.png" /> Figure 253: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa5.png" /> Figure 254: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa6.png" /> Figure 255: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa7.png" /> Figure 256: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa8.png" /> Figure 257: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact1_MPa9.png" /> Figure 258: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: environmental impact: acidification (AP), impact units = moles of H+-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="environmental-impact-eutrophication" class="section level2 tabset tabset-fade tabset-pills">
+<h2>environmental impact: eutrophication</h2>
+<div id="mix-designs-15-to-20mpa-1" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa2.png" /> Figure 259: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-1" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa3.png" /> Figure 260: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-1" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa4.png" /> Figure 261: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-1" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa5.png" /> Figure 262: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-1" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa6.png" /> Figure 263: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-1" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa7.png" /> Figure 264: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-1" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa8.png" /> Figure 265: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-1" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact2_MPa9.png" /> Figure 266: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: environmental impact: eutrophication (EP), impact units = kg N per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="environmental-impact-global-warming" class="section level2 tabset tabset-fade tabset-pills">
+<h2>environmental impact: global warming</h2>
+<div id="mix-designs-15-to-20mpa-2" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa2.png" /> Figure 267: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-2" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa3.png" /> Figure 268: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-2" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa4.png" /> Figure 269: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-2" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa5.png" /> Figure 270: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-2" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa6.png" /> Figure 271: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-2" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa7.png" /> Figure 272: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-2" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa8.png" /> Figure 273: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-2" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact4_MPa9.png" /> Figure 274: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: environmental impact: global warming (GWP), impact units = kg CO2-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="environmental-impact-ozone-depletion" class="section level2 tabset tabset-fade tabset-pills">
+<h2>environmental impact: ozone depletion</h2>
+<div id="mix-designs-15-to-20mpa-3" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa2.png" /> Figure 275: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-3" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa3.png" /> Figure 276: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-3" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa4.png" /> Figure 277: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-3" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa5.png" /> Figure 278: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-3" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa6.png" /> Figure 279: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-3" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa7.png" /> Figure 280: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-3" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa8.png" /> Figure 281: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-3" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact5_MPa9.png" /> Figure 282: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: environmental impact: ozone depletion (ODP), impact units = kg CFC-11-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="environmental-impact-photochemical-oxidation" class="section level2 tabset tabset-fade tabset-pills">
+<h2>environmental impact: photochemical oxidation</h2>
+<div id="mix-designs-15-to-20mpa-4" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa2.png" /> Figure 283: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-4" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa3.png" /> Figure 284: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-4" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa4.png" /> Figure 285: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-4" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa5.png" /> Figure 286: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-4" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa6.png" /> Figure 287: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-4" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa7.png" /> Figure 288: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-4" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa8.png" /> Figure 289: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-4" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact6_MPa9.png" /> Figure 290: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: environmental impact: photochemical oxidation (PCOP), impact units = kg NOx-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="abiotic-depletion-elements" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Abiotic Depletion-elements</h2>
+<div id="mix-designs-15-to-20mpa-5" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa2.png" /> Figure 291: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-5" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa3.png" /> Figure 292: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-5" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa4.png" /> Figure 293: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-5" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa5.png" /> Figure 294: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-5" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa6.png" /> Figure 295: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-5" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa7.png" /> Figure 296: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-5" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa8.png" /> Figure 297: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-5" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact23_MPa9.png" /> Figure 298: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Abiotic Depletion-elements (ADPe), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="abiotic-depletion-fossil-fuels" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Abiotic Depletion-fossil fuels</h2>
+<div id="mix-designs-15-to-20mpa-6" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa2.png" /> Figure 299: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-6" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa3.png" /> Figure 300: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-6" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa4.png" /> Figure 301: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-6" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa5.png" /> Figure 302: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-6" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa6.png" /> Figure 303: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-6" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa7.png" /> Figure 304: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-6" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa8.png" /> Figure 305: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-6" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact24_MPa9.png" /> Figure 306: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Abiotic Depletion-fossil fuels (ADPf), impact units = kg Sbeq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="land-filling-bulk-waste" class="section level2 tabset tabset-fade tabset-pills">
+<h2>land filling: bulk waste</h2>
+<div id="mix-designs-15-to-20mpa-7" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa2.png" /> Figure 307: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-7" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa3.png" /> Figure 308: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-7" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa4.png" /> Figure 309: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-7" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa5.png" /> Figure 310: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-7" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa6.png" /> Figure 311: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-7" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa7.png" /> Figure 312: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-7" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa8.png" /> Figure 313: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-7" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact18_MPa9.png" /> Figure 314: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: land filling: bulk waste (LFW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="land-filling-hazardous-waste" class="section level2 tabset tabset-fade tabset-pills">
+<h2>land filling: hazardous waste</h2>
+<div id="mix-designs-15-to-20mpa-8" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa2.png" /> Figure 315: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-8" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa3.png" /> Figure 316: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-8" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa4.png" /> Figure 317: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-8" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa5.png" /> Figure 318: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-8" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa6.png" /> Figure 319: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-8" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa7.png" /> Figure 320: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-8" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa8.png" /> Figure 321: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-8" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact19_MPa9.png" /> Figure 322: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: land filling: hazardous waste (LFHW), impact units = kg waste per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="total-primary-energy" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Total primary energy</h2>
+<div id="mix-designs-15-to-20mpa-9" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa2.png" /> Figure 323: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-9" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa3.png" /> Figure 324: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-9" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa4.png" /> Figure 325: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-9" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa5.png" /> Figure 326: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-9" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa6.png" /> Figure 327: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-9" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa7.png" /> Figure 328: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-9" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa8.png" /> Figure 329: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-9" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact25_MPa9.png" /> Figure 330: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Total primary energy (TPE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="renewable-energy" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Renewable energy</h2>
+<div id="mix-designs-15-to-20mpa-10" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa2.png" /> Figure 331: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-10" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa3.png" /> Figure 332: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-10" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa4.png" /> Figure 333: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-10" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa5.png" /> Figure 334: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-10" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa6.png" /> Figure 335: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-10" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa7.png" /> Figure 336: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-10" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa8.png" /> Figure 337: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-10" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact26_MPa9.png" /> Figure 338: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Renewable energy (RE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="non-renewable-energy" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Non-renewable energy</h2>
+<div id="mix-designs-15-to-20mpa-11" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa2.png" /> Figure 339: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-11" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa3.png" /> Figure 340: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-11" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa4.png" /> Figure 341: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-11" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa5.png" /> Figure 342: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-11" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa6.png" /> Figure 343: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-11" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa7.png" /> Figure 344: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-11" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa8.png" /> Figure 345: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-11" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact27_MPa9.png" /> Figure 346: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Non-renewable energy (NRE), impact units = MJ-Eq per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="water-depletion-wdp" class="section level2 tabset tabset-fade tabset-pills">
+<h2>water depletion: WDP</h2>
+<div id="mix-designs-15-to-20mpa-12" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa2.png" /> Figure 347: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-12" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa3.png" /> Figure 348: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-12" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa4.png" /> Figure 349: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-12" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa5.png" /> Figure 350: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-12" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa6.png" /> Figure 351: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-12" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa7.png" /> Figure 352: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-12" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa8.png" /> Figure 353: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-12" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact22_MPa9.png" /> Figure 354: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: water depletion: WDP (WDP), impact units = m3 per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="non-renewable-resources" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Non-Renewable Resources</h2>
+<div id="mix-designs-15-to-20mpa-13" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa2.png" /> Figure 355: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-13" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa3.png" /> Figure 356: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-13" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa4.png" /> Figure 357: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-13" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa5.png" /> Figure 358: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-13" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa6.png" /> Figure 359: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-13" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa7.png" /> Figure 360: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-13" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa8.png" /> Figure 361: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-13" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact20_MPa9.png" /> Figure 362: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Non-Renewable Resources (NRR), impact units = kg per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+<div id="renewable-resources" class="section level2 tabset tabset-fade tabset-pills">
+<h2>Renewable Resources</h2>
+<div id="mix-designs-15-to-20mpa-14" class="section level3">
+<h3>Mix designs: 15 to 20MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa2.png" /> Figure 363: <strong>Detailed breakdown of impacts across Mix designs: 15 to 20MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-21-to-25mpa-14" class="section level3">
+<h3>Mix designs: 21 to 25MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa3.png" /> Figure 364: <strong>Detailed breakdown of impacts across Mix designs: 21 to 25MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-26-to-30mpa-14" class="section level3">
+<h3>Mix designs: 26 to 30MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa4.png" /> Figure 365: <strong>Detailed breakdown of impacts across Mix designs: 26 to 30MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-31-to-35mpa-14" class="section level3">
+<h3>Mix designs: 31 to 35MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa5.png" /> Figure 366: <strong>Detailed breakdown of impacts across Mix designs: 31 to 35MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-36-to-40mpa-14" class="section level3">
+<h3>Mix designs: 36 to 40MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa6.png" /> Figure 367: <strong>Detailed breakdown of impacts across Mix designs: 36 to 40MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-41-to-45mpa-14" class="section level3">
+<h3>Mix designs: 41 to 45MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa7.png" /> Figure 368: <strong>Detailed breakdown of impacts across Mix designs: 41 to 45MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-46-to-50mpa-14" class="section level3">
+<h3>Mix designs: 46 to 50MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa8.png" /> Figure 369: <strong>Detailed breakdown of impacts across Mix designs: 46 to 50MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+</div>
+<div id="mix-designs-51-to-55mpa-14" class="section level3">
+<h3>Mix designs: 51 to 55MPa</h3>
+<p><img src="figures/stackedBar_impact28_MPa9.png" /> Figure 370: <strong>Detailed breakdown of impacts across Mix designs: 51 to 55MPa. Impact category: Renewable Resources (RR), impact units = kg per 1 cubic meter of concrete</strong></p>
+<hr />
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Ready Mix Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Ready Mix Inc.</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operation: P3 Optima</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> 3rd Party Verifier: FirstName LastName</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> Original Publish Date: 25 April 2020 <br> Updated on: no updates <br> EPD valid until: 24 April 2025</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+ 	    $('#content img')
+ 	  .addClass("image-lb");
+  $('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      closeBtnInside: false,
+	      delegate: 'img',
+	      gallery: {enabled: true },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+ 	});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
