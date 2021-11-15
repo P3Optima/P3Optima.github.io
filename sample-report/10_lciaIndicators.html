@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Product owner: Lafarge Canada Inc" />
+<meta name="author" content="EPD Commissioner: Lafarge Canada Inc" />
+<meta name="author" content="Program Operation: P3 Optima" />
+<meta name="author" content="3rd Party Verifier: FirstName LastName" />
+
+
+<title>LCIA Indicators</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
+<link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+<script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+<link href="site_libs/readthedown-0.1/readthedown.css" rel="stylesheet" />
+<script src="site_libs/readthedown-0.1/readthedown.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"> <div> <img id="logo" style="width: 150px;" src="figures/EPDdevLogo.png"/>  An EPD for Company123's XXX facility in City </div></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://p3optima.com/">
+    <span class="fa fa-home"></span>
+     
+    P3 Optima
+  </a>
+</li>
+<li>
+  <a href="EPDreport.html">
+    <span class="fa fa-users"></span>
+     
+    EPD Report
+  </a>
+</li>
+<li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Cover
+  </a>
+</li>
+<li>
+  <a href="01_adminInfo.html">
+    <span class="fa fa-user-shield"></span>
+     
+    Admin info
+  </a>
+</li>
+<li>
+  <a href="02_companyInfo.html">
+    <span class="fa fa-address-card"></span>
+     
+    Company info
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-rainbow"></span>
+     
+    Goal and Scope
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="03_studyGoal.html">Study goal</a>
+    </li>
+    <li>
+      <a href="04_productScope.html">Product scope</a>
+    </li>
+    <li>
+      <a href="05_mixSummary.html">Concrete mix summary</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-database"></span>
+     
+    Life cycle inventory
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="06_systemBoundaries.html">System boundaries</a>
+    </li>
+    <li>
+      <a href="07_dataSourceQuality.html">Data sources &amp; quality</a>
+    </li>
+    <li>
+      <a href="08_detailedLCItables.html">Detailed LCI tables</a>
+    </li>
+    <li>
+      <a href="09_transportTables.html">Transport tables</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="10_lciaIndicators.html">
+    <span class="fa fa-ruler"></span>
+     
+    LCIA indicators
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-chart-bar"></span>
+     
+    LCIA results
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="11_totImpactSummary.html">Total impact summary</a>
+    </li>
+    <li>
+      <a href="12_A1toA3breakdown.html">A1 to A3 breakdown</a>
+    </li>
+    <li>
+      <a href="13_totImpactStats.html">Total impact statistics</a>
+    </li>
+    <li>
+      <a href="14_detailedBreakdownPlots.html">Detailed breakdown plots</a>
+    </li>
+    <li>
+      <a href="29_detailedLCIAbreakdownTables.html">Detailed breakdown tables</a>
+    </li>
+    <li>
+      <a href="30_additionalEnvInfo.html">Other Env. Info</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="31_references.html">
+    <span class="fa fa-books"></span>
+     
+    References
+  </a>
+</li>
+<li>
+  <a href="32_verificationReport.html">
+    <span class="fa fa-check-square"></span>
+     
+    Verification
+  </a>
+</li>
+<li>
+  <a href="https://p3optima.github.io/EPDregistry/">
+    <span class="fa fa-list"></span>
+     
+    EPD Registry
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="content" data-toggle="wy-nav-shift">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("text-table-of-contents");
+});
+</script>
+
+<!-- code folding -->
+
+<nav id="nav-top" role="navigation" aria-label="top navigation">
+    <a role="button" href="#" data-toggle="wy-nav-top"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+</nav>
+
+
+<div id="header">
+<h1 class="title">LCIA Indicators</h1>
+</div>
+
+
+<div id="table-of-contents">
+    <h2><a href="#content">LCIA Indicators</a></h2>
+    <div id="text-table-of-contents">
+      <ul>
+      <li><a href="#section"></a></li>
+      <li><a href="#section-1"></a></li>
+      <li><a href="#section-2"></a></li>
+      <li><a href="#section-3"></a></li>
+      <li><a href="#section-4"></a></li>
+      <li><a href="#section-5"></a></li>
+      <li><a href="#section-6"></a></li>
+      <li><a href="#environmental-indicators-and-inventory-metrics">Environmental Indicators and Inventory Metrics</a></li>
+      </ul>
+    </div>
+</div>
+
+<div id="main">
+<div id="section" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-1" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-2" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-3" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-4" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-5" class="section level2 unnumbered">
+<h2></h2>
+</div>
+<div id="section-6" class="section level2 unnumbered">
+<h2></h2>
+<p><br> <br></p>
+</div>
+<div id="environmental-indicators-and-inventory-metrics" class="section level1 unnumbered">
+<h1>Environmental Indicators and Inventory Metrics</h1>
+<p>Per the PCR, this EPD supports the life cycle impact assessment indicators and inventory metrics as listed in the tables below. As specified in the PCR, the US EPA Tool for the Reduction and Assessment of Chemical and Other Environmental Impacts (TRACI), version 2.1, 2012 impact categories were utilized as they provide a North American context for the mandatory category indicators to be included in the EPD. Additionally, the PCR requires a set of inventory metrics to be reported with the LCIA indicators (see tables below).</p>
+Table 793: <strong>Life cycle impact categories and life cycle inventory metrics</strong>
+<table class="table table-striped" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+ID
+</th>
+<th style="text-align:left;">
+LCIA.indicators
+</th>
+<th style="text-align:left;">
+Abbreviations
+</th>
+<th style="text-align:left;">
+Units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;width: 4em; ">
+1
+</td>
+<td style="text-align:left;width: 25em; ">
+environmental impact: acidification
+</td>
+<td style="text-align:left;width: 8em; ">
+AP
+</td>
+<td style="text-align:left;width: 8em; ">
+moles of H+-Eq
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 4em; ">
+2
+</td>
+<td style="text-align:left;width: 25em; ">
+environmental impact: eutrophication
+</td>
+<td style="text-align:left;width: 8em; ">
+EP
+</td>
+<td style="text-align:left;width: 8em; ">
+kg N
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 4em; ">
+3
+</td>
+<td style="text-align:left;width: 25em; ">
+environmental impact: global warming
+</td>
+<td style="text-align:left;width: 8em; ">
+GWP
+</td>
+<td style="text-align:left;width: 8em; ">
+kg CO2-Eq
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 4em; ">
+4
+</td>
+<td style="text-align:left;width: 25em; ">
+environmental impact: ozone depletion
+</td>
+<td style="text-align:left;width: 8em; ">
+ODP
+</td>
+<td style="text-align:left;width: 8em; ">
+kg CFC-11-Eq
+</td>
+</tr>
+<tr>
+<td style="text-align:right;width: 4em; ">
+5
+</td>
+<td style="text-align:left;width: 25em; ">
+environmental impact: photochemical oxidation
+</td>
+<td style="text-align:left;width: 8em; ">
+PCOP
+</td>
+<td style="text-align:left;width: 8em; ">
+kg NOx-Eq
+</td>
+</tr>
+<tr grouplength="12">
+<td colspan="4" style="border-bottom: 1px solid;">
+<strong>Inventory metrics</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+6
+</td>
+<td style="text-align:left;width: 25em; ">
+Abiotic Depletion-elements
+</td>
+<td style="text-align:left;width: 8em; ">
+ADPe
+</td>
+<td style="text-align:left;width: 8em; ">
+kg Sbeq
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+7
+</td>
+<td style="text-align:left;width: 25em; ">
+Abiotic Depletion-fossil fuels
+</td>
+<td style="text-align:left;width: 8em; ">
+ADPf
+</td>
+<td style="text-align:left;width: 8em; ">
+kg Sbeq
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+8
+</td>
+<td style="text-align:left;width: 25em; ">
+Total primary energy
+</td>
+<td style="text-align:left;width: 8em; ">
+TPE
+</td>
+<td style="text-align:left;width: 8em; ">
+MJ-Eq
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+9
+</td>
+<td style="text-align:left;width: 25em; ">
+Non-Renewable Resources
+</td>
+<td style="text-align:left;width: 8em; ">
+NRR
+</td>
+<td style="text-align:left;width: 8em; ">
+kg
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+10
+</td>
+<td style="text-align:left;width: 25em; ">
+Renewable energy
+</td>
+<td style="text-align:left;width: 8em; ">
+RE
+</td>
+<td style="text-align:left;width: 8em; ">
+MJ-Eq
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+11
+</td>
+<td style="text-align:left;width: 25em; ">
+land filling: bulk waste
+</td>
+<td style="text-align:left;width: 8em; ">
+LFW
+</td>
+<td style="text-align:left;width: 8em; ">
+kg waste
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+12
+</td>
+<td style="text-align:left;width: 25em; ">
+land filling: hazardous waste
+</td>
+<td style="text-align:left;width: 8em; ">
+LFHW
+</td>
+<td style="text-align:left;width: 8em; ">
+kg waste
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+13
+</td>
+<td style="text-align:left;width: 25em; ">
+water depletion: WDP
+</td>
+<td style="text-align:left;width: 8em; ">
+WDP
+</td>
+<td style="text-align:left;width: 8em; ">
+m3
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+14
+</td>
+<td style="text-align:left;width: 25em; ">
+Concrete batching water consumption
+</td>
+<td style="text-align:left;width: 8em; ">
+CBWC
+</td>
+<td style="text-align:left;width: 8em; ">
+m3
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+15
+</td>
+<td style="text-align:left;width: 25em; ">
+Concrete washing water consumption
+</td>
+<td style="text-align:left;width: 8em; ">
+CWWC
+</td>
+<td style="text-align:left;width: 8em; ">
+m3
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+16
+</td>
+<td style="text-align:left;width: 25em; ">
+Concrete hazardous waste
+</td>
+<td style="text-align:left;width: 8em; ">
+CHW
+</td>
+<td style="text-align:left;width: 8em; ">
+kg
+</td>
+</tr>
+<tr>
+<td style="text-align:right; padding-left: 2em;width: 4em; " indentlevel="1">
+17
+</td>
+<td style="text-align:left;width: 25em; ">
+Concrete non-hazardous waste
+</td>
+<td style="text-align:left;width: 8em; ">
+CNHW
+</td>
+<td style="text-align:left;width: 8em; ">
+kg
+</td>
+</tr>
+</tbody>
+</table>
+<p>A summary description of each of the impact categories and inventory metrics is provided in the following table:</p>
+Table 794: <strong>Definitions of life cycle impact categories and life cycle inventory metrics</strong>
+<table class="table table-striped" style="font-size: 10px; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr grouplength="6">
+<td colspan="2" style="border-bottom: 1px solid;">
+<strong>Midpoint impact categories</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Global Warming Potential (GWP) (units: kg CO2-eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+Global Warming Potential or climate change can be defined as the change in global temperature caused by the greenhouse effect that the release of greenhouse gases by human activity creates. The Environmental Profiles characterization model is based on factors developed by the United Nations Intergovernmental Panel on Climate Change (IPCC). Factors are expressed as Global Warming Potential over the time horizon of different years, being the most common 100 years (GWP100), measured in the reference unit, kg CO2 equivalent.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Ozone Depletion Potential (ODP) (kg CFC-11-eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+Ozone-depleting gases cause damage to stratospheric ozone or the ozone layer. CFCs, halons and HCFCs are the major causes of ozone depletion. The characterization model has been developed by the World Meteorological Organization (WMO) and defines the ozone depletion potential of different gases relative to the reference substance chlorofluorocarbon-11 (CFC-11), expressed in kg CFC-11 equivalent.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Acidification Potential (AP) (kg SO2-eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+Acidic gases such as Sulphur dioxide (SO2) react with water in the atmosphere to form acid rain, a process known as acid deposition. Acidification potential is expressed using the reference unit, kg SO2 equivalent. The model does not take account of regional differences in terms of which areas are more or less susceptible to acidification. It accounts only for acidification caused by SO2 and NOx. This includes acidification due to fertilizer use, according to the method developed by the Intergovernmental Panel on Climate Change (IPCC). CML has based the characterization factor on the RAINS model developed by the University of Amsterdam.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Eutrophication Potential (EP) (PO4 3- -eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+Eutrophication is the build-up of a concentration of chemical nutrients in an ecosystem which leads to abnormal productivity. This causes excessive plant growth like algae in rivers which causes severe reductions in water quality and animal populations. This category is based on the work of Heijungs, and is expressed using the reference unit, kg PO4 3- equivalents. Direct and indirect impacts of fertilizers are included in the method. The direct impacts are from production of the fertilizers and the indirect ones are calculated using the IPCC method to estimate emissions to water causing eutrophication.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Photochemical Ozone Creation/Smog Potential (POCP) (kg O3-eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+Ozone is protective in the stratosphere, but on the ground-level, it is toxic to humans in high concentration. Photochemical ozone, also called ground-level ozone, is formed by the reaction of volatile organic compounds and nitrogen oxides in the presence of heat and sunlight. The impact category depends largely on the amounts of carbon monoxide (CO), Sulphur dioxide (SO2), nitrogen oxide (NO), ammonium and NMVOC (non-methane volatile organic compounds). Photochemical ozone creation potential (also known as summer smog) for emission of substances to air is calculated with the United Nations Economic Commission for 22 Europe (UNECE) trajectory model (including fate) and expressed using the reference unit, kg ethylene (C2H4) equivalent.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Abiotic Depletion Potential (ADPel and ADPff) (kg Sb-eq)
+</td>
+<td style="text-align:left;width: 50em; ">
+The main concern of this category is the health of humans and the ecosystem and how it is affected by the extraction of minerals and fossil fuels, which are inputs into the system. For each extraction of minerals and fossil fuels, the abiotic depletion factor is determined. This indicator is on a global scale and is based on the concentration reserves and rate of deaccumulation. The results are presented in units of the reference element strontium (i.e. Sb). For the purposes of this EPD, this impact category is split between mineral elements (i.e. ADPel) and fossil fuels (i.e. ADPff).
+</td>
+</tr>
+<tr grouplength="10">
+<td colspan="2" style="border-bottom: 1px solid;">
+<strong>Inventory metrics</strong>
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Depletion of non-renewable material resources (NRM) (kg)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator covers the cumulative life cycle consumption of non-renewable resources that are extracted from the ground but not including energy resources like coal, oil and natural gas. This indicator includes the consumption of metallic ores, aggregates and other minerals. The units of measure are in terms of kilograms material extracted and utilzied/wasted in the life cycle system considered.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Use of renewable material resources (RM) (kg)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator covers the cumulative life cycle consumption of renewable resources that are extracted from nature like sustainably harvested biomass. The units of measure are in terms of kilograms material extracted and utilzied/wasted in the life cycle system considered.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Depletion of non-renewable energy resources (NRE) (MJ HHV)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator considers the cumulative life cycle consumption of non-renewable energy resources like oil, natural gas, and coal. The units of measure are in terms of Mega-Joules of energy resource extracted and utilzied/wasted in the life cycle system considered.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Use of renewable primary energy (RE) (MJ HHV)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator considers the cumulative life cycle extraction of renewable energy resources from nature like solar and wind energy as well as biomass for energy purposes. The units of measure are in terms of Mega-Joules of energy resource extracted and utilzied/wasted in the life cycle system considered.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Total primary energy consumption (PEC) (MJ HHV)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator is the summatation of non-renewable and renewable energy extracted from nature, where the units of measure are in terms of Mega-Joules of energy resource extracted/utilized/wasted in the life cycle system considered.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Concrete batching water consumption (CBWC) (m3)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator is defined as the direct water used in concrete mix batches. The units of measure are in cubic meters of water consumed.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Concrete washing water consumption (CWWC) (m3)
+</td>
+<td style="text-align:left;width: 50em; ">
+This inidcator is defined as the direct washing water used at the facility. The units of measure are in cubic meters of wash water consumed.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Total water consumption (TWC) (m3)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator considers the cumulative life cycle consumption of water required to produced the declared functional unit of a given product. The units of measure are in cubic meters of water consumed.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Concrete hazardous waste (CHW) (kg)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator considers the amount of hazardous waste waste generated at the concrete facility. The units of measure are in kilograms of waste generated.
+</td>
+</tr>
+<tr>
+<td style="text-align:left; padding-left: 2em;width: 20em; " indentlevel="1">
+Concrete non-hazardous waste (CNHW) (kg)
+</td>
+<td style="text-align:left;width: 50em; ">
+This indicator considers the direct amount of non-hazardous waste generated at the concrete facility. The units of measure are in kilograms of waste generated.
+</td>
+</tr>
+</tbody>
+</table>
+<p>It should be noted that emerging LCA impact categories and inventory items are still under development and can have high levels of uncertainty that preclude international acceptance pending further development. Use caution when interpreting data in the following categories.</p>
+<ul>
+<li>Renewable primary energy resources as energy (fuel);</li>
+<li>Renewable primary resources as material;</li>
+<li>Non-renewable primary resources as energy (fuel);</li>
+<li>Non-renewable primary resources as material;</li>
+<li>Secondary Materials;</li>
+<li>Renewable secondary fuels;</li>
+<li>Non-renewable secondary fuels;</li>
+<li>Recovered energy;</li>
+<li>Abiotic depletion potential for non-fossil mineral resources.</li>
+<li>Land use related impacts, for example on biodiversity and/or soil fertility;</li>
+<li>Toxicological aspects;</li>
+<li>Emissions from land use change [GWP 100 (land-use change)];</li>
+<li>Hazardous waste disposed;</li>
+<li>Non-hazardous waste disposed;</li>
+<li>High-level radioactive waste;</li>
+<li>Intermediate and low-level radioactive waste;</li>
+<li>Components for reuse;</li>
+<li>Materials for recycling;</li>
+<li>Materials for energy recovery;</li>
+<li>Recovered energy exported from the product system.</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+
+<div id="postamble" data-toggle="wy-nav-shift" class="status">
+<p class="author"><span class="glyphicon glyphicon-user"></span> Product owner: Lafarge Canada Inc</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> EPD Commissioner: Lafarge Canada Inc</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> Program Operation: P3 Optima</p>
+<p class="author"><span class="glyphicon glyphicon-user"></span> 3rd Party Verifier: FirstName LastName</p>
+<p class="date"><span class="glyphicon glyphicon-calendar"></span> Original Publish Date: 19 March 2020 <br> Updated on: no updates <br> EPD valid until: 18 March 2025</p>
+</div>
+
+
+<script>
+$(document).ready(function () {
+ 	    $('#content img')
+ 	  .addClass("image-lb");
+  $('#content').magnificPopup({
+	      type:'image',
+	      closeOnContentClick: false,
+	      closeBtnInside: false,
+	      delegate: 'img',
+	      gallery: {enabled: true },
+	      image: {
+	        verticalFit: true,
+          titleSrc: 'alt'
+	      }
+ 	    });
+ 	});
+</script>
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
