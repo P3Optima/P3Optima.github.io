@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="generator" content="pandoc" />
+
+    
+    
+    <title>index.knit</title>
+
+        <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+        <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="site_libs/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="site_libs/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+        <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+        <script src="site_libs/navigation-1.1/tabsets.js"></script>
+        <link href="site_libs/magnific-popup-1.1.0/magnific-popup.css" rel="stylesheet" />
+        <script src="site_libs/magnific-popup-1.1.0/jquery.magnific-popup.min.js"></script>
+        <link href="site_libs/clean-0.1/clean.css" rel="stylesheet" />
+        <script src="site_libs/clean-0.1/clean.js"></script>
+        <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+        <link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+        <script src="site_libs/datatables-binding-0.18/datatables.js"></script>
+        <link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+        <link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+        <script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+        <script src="site_libs/jszip-1.10.20/jszip.min.js"></script>
+        <script src="site_libs/pdfmake-1.10.20/pdfmake.js"></script>
+        <script src="site_libs/pdfmake-1.10.20/vfs_fonts.js"></script>
+        <link href="site_libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+        <script src="site_libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+        <script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+        <script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+        <script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+        <script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+        <link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+        <script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+        <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+        <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+    
+    
+    
+    
+    <!-- tabsets -->
+    <script>
+      $(document).ready(function () {
+	  window.buildTabsets("toc");
+      });
+      $(document).ready(function () {
+	  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+	      $(this).parent().toggleClass('nav-tabs-open')
+	  });
+      });
+    </script>
+
+    <!-- code folding -->
+    
+    <!-- code download -->
+    
+    <!-- tabsets dropdown -->
+
+    <style type="text/css">
+      .tabset-dropdown > .nav-tabs {
+	  display: inline-table;
+	  max-height: 500px;
+	  min-height: 44px;
+	  overflow-y: auto;
+	  background: white;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+	  content: "&#xe258;";
+	  border: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+	  content: "";
+	  font-family: 'Glyphicons Halflings';
+	  display: inline-block;
+	  padding: 10px;
+	  border-right: 1px solid #ddd;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li.active {
+	  display: block;
+      }
+
+      .tabset-dropdown > .nav-tabs > li.active a {
+  	  padding: 0 15px !important;
+      }
+
+      .tabset-dropdown > .nav-tabs > li > a,
+      .tabset-dropdown > .nav-tabs > li > a:focus,
+      .tabset-dropdown > .nav-tabs > li > a:hover {
+	  border: none;
+	  display: inline-block;
+	  border-radius: 4px;
+	  background-color: transparent;
+      }
+      
+      .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+	  display: block;
+	  float: none;
+      }
+      
+      .tabset-dropdown > .nav-tabs > li {
+	  display: none;
+	  margin-left: 0 !important;
+      }
+    </style>
+    
+</head>
+
+<body class="preload">
+
+      <!-- html_clean start -->
+   <div class="container-fluid main-container">
+     <div class="row">
+       <div class="col-md-10">
+   	
+            
+   
+      
+      <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+        <a href="https://P3Optima.com/programOperator">
+          <span class="fa fa-home"></span>
+           
+          P3 Optima
+        </a>
+      </li>
+      <li>
+        <a href="index.html">
+          <span class="fa fa-database"></span>
+           
+          EPD List
+        </a>
+      </li>
+      <li>
+        <a href="https://P3Optima.com/contact-us/">
+          <span class="fa fa-paper-plane"></span>
+           
+          Contact us
+        </a>
+      </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container -->
+      </div><!--/.navbar -->
+        
+      
+        
+
+      <!-- html_clean authors -->
+         
+      
+   
+<!-- Don't indent these lines or it will mess pre blocks indentation --> 
+<div id="content">
+<p><br> <br></p>
+<div id="your-optimum-epd-solution" class="section level2">
+<h2>Your Optimum EPD Solution</h2>
+<p><img src="figures/POlogo.png" width="130%" /></p>
+<p>Last updated: 2021-11-13</p>
+<p><strong>There are 22 declared products from 1 unique companies across 1 unique facilities. Please select the product profile that you wish to review: </strong></p>
+<p>Search for your desired product and click on one of the following report links on the right end of the table:</p>
+<ul>
+<li>pdf_label = The product-specific label (i.e., EPD transparency brief);</li>
+<li>html_report = The detailed public-facing EPD report with all facility products included;</li>
+<li>pdf_report = Same has html_report but in pdf format.</li>
+</ul>
+<div style="width:150%; height:auto; margin: auto;">
+<div id="htmlwidget-2d5ee5c3da9f3201c08a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2d5ee5c3da9f3201c08a">{"x":{"filter":"none","extensions":["Buttons"],"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22"],["FRE-114-3-5-AW","FRE-114-3-5-AH","FRED-114-2-5-ACA","FRE-114-2-5-OK","FREB-5-CHA","FREB-5-PD","FREB-7-AST","FREB-7-AVE","FREB-7-BLC","FREB-7-CAV","FREB-7-CHA","FREB-7-CHA-SEL","FREB-7-DUN","FREB-7-FUM","FREB-9-CHA","FREB-HB-CHA","FREB-HB-FUM","FREB-HB-TAH","FREB-5-TAH","FREB-7-HDN","FREB-7-TAH","FREB-7-TTN"],["American Walnut","American Hickory","Short-Leaf Acacia","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak","European Oak"],["Engineered wood flooring, American Walnut, width=127mm, thickness=14mm","Engineered wood flooring, American Hickory, width=127mm, thickness=14mm","Engineered wood flooring, Short-Leaf Acacia, width=125mm, thickness=14mm","Engineered wood flooring, European Oak, width=127mm, thickness=14mm","Engineered wood flooring, European Oak, width=127mm, thickness=14mm","Engineered wood flooring, European Oak, width=127mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=220mm, thickness=14mm","Engineered wood flooring, European Oak, width=120mm, thickness=14mm","Engineered wood flooring, European Oak, width=120mm, thickness=14mm","Engineered wood flooring, European Oak, width=120mm, thickness=14mm","Engineered wood flooring, European Oak, width=127mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm","Engineered wood flooring, European Oak, width=189mm, thickness=14mm"],["Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring","Flooring"],["m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2","m2"],["Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC","Allwood.Group,.LLC"],["Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City","Jiaxing.City"],["Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ","Jiaxing City, CN-ZJ"],["18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021","18 August 2021"],["17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026","17 August 2026"],["<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FRE-114-3-5-AW.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FRE-114-3-5-AH.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FRED-114-2-5-ACA.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FRE-114-2-5-OK.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-5-CHA.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-5-PD.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-AST.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-AVE.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-BLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-CAV.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-CHA.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-CHA-SEL.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-DUN.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-FUM.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-9-CHA.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-HB-CHA.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-HB-FUM.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-HB-TAH.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-5-TAH.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-HDN.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-TAH.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPD_label_Allwood.Group,.LLC_Jiaxing.City_product_FREB-7-TTN.pdf target=\"_blank\">PDF<\/a>"],["<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.html target=\"_blank\">HTML<\/a>"],["<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>","<a href=EPDs/EPDreport.P3.Optima.Jiaxing.City.Allwood.Group,.LLC.pdf target=\"_blank\">PDF<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Product.id<\/th>\n      <th>Product.type<\/th>\n      <th>Product<\/th>\n      <th>ref.product<\/th>\n      <th>ref.unit<\/th>\n      <th>Company<\/th>\n      <th>Facility<\/th>\n      <th>location<\/th>\n      <th>valid.from<\/th>\n      <th>valid.to<\/th>\n      <th>pdf_label<\/th>\n      <th>html_report<\/th>\n      <th>pdf_report<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Blfrtip","buttons":["copy","csv","excel","pdf","print"],"lengthMenu":[[10,25,50,-1],["10","25","50","All"]],"autoWidth":true,"columnDefs":[{"width":"75px","targets":1},{"width":"100px","targets":2},{"width":"150px","targets":3},{"width":"85px","targets":4},{"width":"40px","targets":5},{"width":"50px","targets":6},{"width":"50px","targets":7},{"width":"50px","targets":8},{"width":"40px","targets":9},{"width":"40px","targets":10},{"width":"25px","targets":11},{"width":"25px","targets":12},{"width":"25px","targets":13},{"orderable":false,"targets":0}],"initComplete":"\n                        function(settings, json) {\n                          $(this.api().table().header()).css({\n                          'font-size': '12px',\n                          });\n                        }\n                        ","order":[],"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'10px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'10px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'10px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'10px'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'10px'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'font-size':'10px'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'font-size':'10px'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'font-size':'10px'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'font-size':'10px'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'font-size':'10px'});\nvar value=data[10]; $(this.api().cell(row, 10).node()).css({'font-size':'10px'});\nvar value=data[11]; $(this.api().cell(row, 11).node()).css({'font-size':'10px'});\nvar value=data[12]; $(this.api().cell(row, 12).node()).css({'font-size':'10px'});\nvar value=data[13]; $(this.api().cell(row, 13).node()).css({'font-size':'10px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+
+   
+   
+      </div>
+   <div class="col-md-2">
+          <div id="toc">
+       <button type="button" class="close">×</button>
+       <ul>
+       <li><a href="#your-optimum-epd-solution">Your Optimum EPD Solution</a></li>
+       </ul>
+     </div>
+        </div>
+   </div>
+   </div>
+            
+      
+
+  <script>
+    $(document).ready(function () {
+
+		// add bootstrap table styles to pandoc tables
+	$('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+		
+ 	 	$('#content img').addClass("image-thumb");
+		
+		$('#content img:not(.no-lightbox)').addClass("image-lb");
+	$('#content').magnificPopup({
+	    type:'image',
+	    closeOnContentClick: false,
+	    closeBtnInside: false,
+	    delegate: '.image-lb',
+	    gallery: {enabled: false },
+	    image: {
+	        verticalFit: true,
+		titleSrc: 'alt'
+	    }
+ 	});
+ 	    });
+  </script>
+
+
+
+    <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+	var script = document.createElement("script");
+	script.type = "text/javascript";
+	script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+	document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+  
+</body>
+</html>
